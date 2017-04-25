@@ -1,0 +1,22 @@
+#main {
+	height: 100%;
+}
+#column1 {
+	height: 100%;
+	padding: 0px;
+}
+
+#column2 {
+	height: 100%;
+	padding: 0px;
+}
+
+#column3 {
+	height: 100%;
+	padding: 0px;
+	background-color: #000 !important;
+}
+
+#twitter-widget-0 {
+	width: 100% !important;
+	height: 100% !important;

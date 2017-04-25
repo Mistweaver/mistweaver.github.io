@@ -1,0 +1,169 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bryce Egley Portfolio</title>
+        <!-- Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- font awesome for icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--web fonts-->      
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!-- custom css -->
+        <link href="portfolio.css" rel="stylesheet" type="text/css" media="screen">
+    	<script src="portfolio.js"></script>
+	</head>
+	<body>
+		<section id="portalOverlay">
+			<div class="container">
+				<div class="row">
+				</div>
+			</div>
+		</section>
+		<section id="mainSplash">
+			<nav class="navbar navbar-default">
+			  	<div class="container-fluid">
+			    	<div class="navbar-header">
+			      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        		<span class="sr-only">Toggle navigation</span>
+			        		<span class="icon-bar"></span>
+			        		<span class="icon-bar"></span>
+			        		<span class="icon-bar"></span>
+			      		</button>
+			    	</div>
+			    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      		<ul class="nav navbar-nav navbar-right">
+			        		<li><a href="#">About</a></li>
+			        		<li><a href="#">Engineering</a></li>
+			        		<li><a href="#">Development</a></li>
+			      		</ul>
+			    	</div>
+			  	</div>
+			</nav>
+			<div id="mainSplash">
+				<div class="container">
+					<div class="row">
+						<div id="main" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<div id="title">
+								<h1>Bryce Egley</h1>
+								<h3>Engineer | Developer</h3>
+							</div>
+							<div id="bio">
+								<h5>Aeronautical and aerospace engineer, web developer, self-taught programmer, and writer with interests in dynamics and control, machine learning, robotics, and sustainable food systems.</h5>
+								<p>Email: bryce.a.egley@gmail.com</p>
+								<p><a href="#">LinkedIn</a></p>
+								<p><a href="#">Github</a></p>
+								<button class="btn">My Resume</button>
+							</div>
+						</div>
+						<div id="images" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash1" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash4" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row divide"></div>
+				</div>
+				<div class="container">
+					<div id="engineering" class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header">
+							<h2>Engineering</h2>
+						</div>
+					</div>
+					<div id="arois" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h4>Sense and Avoid with Computer Vision</h4>
+							<p>I personally wrote an application in Python utilizing OpenCV to detect objects in-flight.  The application used multiple threads to receive images from a USB camera mounted on the aircraft's wing, provide analysis, and determine any objects that fell within the targeted color hue selected.  The entire program was run on a Raspberry Pi 2 mounted in the aircraft's fuselage</p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+						</div>
+					</div>
+					<div id="seniorDesign" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+							<h4>Purdue senior design aircraft</h4>
+							<p>Worked in tandem with a team of five other members to design and build a small aircraft from scratch that fit in a budget under $500, could be disassembled into a medium sized plastic bin, assembled in under ten minutes, and carry the necessary equipment for the aforementioned software program.  Aircraft underwent three successful test flights.</p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row divide"></div>
+				</div>
+				<div class="container">
+					<div id="development" class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header">
+							<h2>Web/Software Development</h2>
+						</div>
+					</div>
+					<div id="purdueGEP" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
+							<h4>Interactive Global Engineering Map</h4>
+							<p>Building on mapael.js, I created an interactive Javascript map that allows students and faculty to view a global map that would provide information on Purdue University's Global Engineering program.</p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="purdueRugby" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
+							<h4>Purdue Men's Rugby Website</h4>
+							<p>During my time as the Social Media Director for the club, one of my initiatives was to update the team's website.  I designed the project from scratch, and with a PHP backend added a number of dynamic features such as historical rosters, season schedules, and recruiting forms</p>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="superMariota" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
+							<h4>Super Mariota Android Application</h4>
+							<p>Designing all the graphics myself, I wrote my first Android application as a side-scrolling platform game that mimicked Super Mario with a pun on Titans quarterback Marcus Mariota.  
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="aeroGUI" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="javaOpenGL" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="tetris" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+					<div id="portalTileDemo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
+						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>

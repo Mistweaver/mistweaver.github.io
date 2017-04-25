@@ -1,0 +1,263 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+	/*background-image: url("matrixUI2.png");
+	background-size: cover;
+	background-repeat: no-repeat;*/
+	
+}
+
+#portalOverlay {
+	display: none;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+#bio a:hover {
+	text-decoration: none;
+}
+
+.splash {
+	padding: 15px;
+}
+
+.splash .imageContain {
+	-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.imageContain {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 100%;
+}
+
+#splash1 {
+	background-image: url("supermariotascreen2.png");
+}
+#splash2 {
+	background-image: url("aircraftflight.jpg");
+}
+#splash3 {
+	background-image: url("image.png");
+}
+#splash4 {
+	background-image: url("ModalAnalysis5.jpg");
+}
+
+#splashPage {
+	padding: 0px;
+	overflow: hidden;
+	height: 250px;
+}
+
+#main img {
+	height: 100%;
+}
+
+#bannerTitle {
+	height: 150px;
+	background-color: white;
+	text-align: center;
+}
+
+.project {
+	padding: 10px;
+	margin-bottom: 15px;
+	transition: all .3s ease-in-out;
+}
+
+.projectContain a {
+	color: black;
+}
+
+.projectContain a:hover {
+	text-decoration: none;
+}
+
+.divide {
+	height: 100px;
+}
+
+.header {
+	/*-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;*/
+    margin-bottom: 25px;
+    height: 250px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.bannerText {
+	color: white;
+	background-color: rgba(0,0,0,0.8);
+	padding: 10px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.header h2 {
+	font-weight: bold;
+}
+
+#engineering .header {
+	background-image: url("cockpit.jpg");
+}
+
+#development .header {
+	background-image: url("Atlas.jpeg");
+}
+
+
+
+.nav li {
+	transition: all 0.3s ease-in-out;
+}
+
+.nav li:hover {
+	-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.project:hover {
+	-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.header {
+	-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.projectImageContain {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#project1 {
+	background-image: url("image.png");
+}
+
+#project2 {
+	background-image: url("aircraftflight.jpg");
+}
+
+#project3 {
+	background-image: url("ModalAnalysis4.jpg");
+}
+
+#project4 {
+	background-image: url("StereoCase.jpg");
+}
+
+#project5 {
+	background-image: url("gepScreenCap.jpg");
+}
+
+#project6 {
+	background-image: url("rugbywebsite.jpg");
+}
+
+#project7 {
+	background-image: url("supermariotamainscreen.png");
+}
+
+#project8 {
+	background-image: url("runwayIncursion1.png");
+}
+
+#project9 {
+	background-image: url("popgrowth.jpg");
+}
+
+#project10 {
+	background-image: url("GoTetris.png");
+}
+
+#project11 {
+	background-image: url("bobbyts.png");
+}
+
+#project12 {
+	background-image: url("mech1.jpg");
+}
+
+#project13 {
+	background-image: url("portalTileDemo.png");
+}
+
+#project14 {
+	background-image: url("characterinventory.png");
+}
+
+#project15 {
+	background-image: url("epicsTeams.png");
+}
+
+#project16 {
+	background-image: url("latinSpain2.png");
+}
+
+.projectContain {
+	padding: 10px;
+}
+
+.captionContain {
+	padding: 5px;
+	border-top: 2px solid red;
+}
+
+#engineering {
+
+}
+#development {
+
+}
+
+#images {
+	display: none;
+}
+
+/***************************LIGHTBOX CSS*******************/
+.lightbox {
+	background-color: black;
+	color: white;
+	padding-top: 20px;
+}
+
+.lightboxImage {
+	width: 100%;
+	margin: 5px;
+}
+
+/***************************MEDIA QUERIES************************/
+@media (min-width : 768px) {
+	#images {
+		display: block;
+	}
+}
+
+@media (min-width : 992px) {
+	
+}
+
+@media (min-width : 1200px) {
+}

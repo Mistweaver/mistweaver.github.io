@@ -1,0 +1,562 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+a, div a, p a, li a, blockquote a, td a {
+  text-decoration: none;
+}
+
+a {
+  color: white;
+}
+
+#thu {
+  color: #337ab7;
+}
+
+/**********HEADER***********/
+
+.researchhead {
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+    font-size: 3em;
+	color:#FFF;
+	padding: 1em 0em 0em 1em;
+
+}
+
+.top {
+  background-image: url('https://engineering.purdue.edu/Wraps/ECO/wrap7/images/stripes.png');
+  background-repeat: repeat;
+}
+
+.top .logo {
+  margin: 25px 0px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.upperbar {
+  background-color: #a3792c;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    border: 0px;
+    box-shadow: 0px 2px 10px #1e1e1e;
+  height: 20px;
+}
+
+.lowerbar {
+  background-color: black;
+  text-align: center;
+  padding: 0;
+
+}
+
+.lowerbar h2 {
+  color: white;
+}
+
+.logo {
+  margin: 25px 0px;
+}
+
+.logo a img {
+  width: 100%;
+  display: block;
+}
+
+.department {
+  margin-top: 30px;
+}
+
+.top .department a {
+    color: #000;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+
+
+.top .department a, .top .department .tagline {
+    font-weight: 100;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-left: 1px solid #a3792c;
+    display: block;
+}
+
+
+.table-responsive {
+	color: #000;
+    background-color: #f3f3f3;
+	
+}
+
+.table-responsive td {
+	padding: .5em;
+}
+
+.table-responsive a {
+	color:#000;
+}
+
+.dgbg {
+	background-color:#a5a5a5;
+	font-size:1.5em;
+	font-weight:600;
+	padding:1em;
+}
+
+.lgbg {
+		background-color:#c3c3c3;
+}
+
+#main {
+  padding: 0px;
+  background: url(../images/black-grid.jpg);
+}
+
+.headbar {
+  padding: 0px;	
+  height:6%;
+  width:100%;
+  background-color:#4D4038;
+  padding-top: 5px;
+  margin-right: 0px; margin-left: 0px;
+}
+
+.hometext {
+	font-weight: 700;
+    text-shadow: 1px 1px black;
+    font-size: 2em;
+	color: #FFF;
+}
+
+.headtext {
+	font-weight: 700;
+    text-shadow: 1px 1px black;
+    font-size: 2.4em;
+	color: #FFF;
+}
+
+.researchoverview {
+	color:#fff;
+	font-size:2em;
+	padding-left:1.6em;
+}
+
+.box {
+  padding: 0px;
+  height: 47%;
+  width: 50%;
+}
+
+.index_box {
+  padding: 0px;
+  height: 50%;
+  width: 50%;
+}
+
+#box1a {
+	background: url(../images/events-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+	background-size: 100% 100%;
+}
+
+#box1 {
+	background: url(../images/cells-bg4.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+	background-size: 100% 100%;
+}
+
+#box2 {
+	background: url(../images/imaging-bg3.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+	background-size: 100% 100%;
+}
+#box3 {
+	background: url(../images/instrumentation-bg3.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+	background-size: 100% 100%;
+}
+#box4 {
+	background: url(../images/tissue-bg.png);
+	background-repeat: no-repeat;
+    background-position: left top;
+	background-size: 100% 100%;
+}
+
+
+.boximage{
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+#index_box1 {
+  background-image: url("../images/events-banner.jpg");
+}
+
+#index_box2 {
+    background-image: url("../images/research-box.jpg");
+    background-size: cover;
+    background-repeat: none;
+}
+
+#index_box3 {
+	
+}
+
+#index_box4 {
+	
+}
+
+.thumbnailContain {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  bottom: 0;
+  padding: 0px;
+}
+
+.scheduleContain {
+
+}
+
+.thumb {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  background-color: #000;
+}
+
+.thumbnailVidContain {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 200px;
+  top: 200px; 
+  bottom: 0;
+  padding: 0px;
+}
+
+.thumbVid {
+  text-align: center;
+  height: 100%;
+  position: relative;
+}
+
+.facultyname {
+  text-shadow: 1px 1px black;
+  font-size: 1.2em;
+  background-color: rgba(0,0,0,.2);
+  padding:2px;
+  }
+  
+a:hover .facultyname {
+  color: white;
+}
+
+a:hover .headtext{ 
+    color: white;
+}
+
+
+.circleContain {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    opacity: 0.7;
+    background-image: url("http://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/frontier_macsj0717.jpg?itok=V4q9UgHD");
+}
+
+.circleContainMartinez {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/martinez-thumb-big.jpg");
+}
+
+.circleContainLinnes{
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/linnes-thumb-big.jpg");
+}
+
+.circleContainRispoli {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/rispoli-thumb-big.jpg");
+}
+
+
+.circleContainHuang {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/huang-thumb-big.jpg");
+}
+
+.circleContainHarbin {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/harbin-thumb-big.jpg");
+}
+
+.circleContainCalve {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/calve-thumb-big.jpg");
+}
+
+.circleContainCheng {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/cheng-thumb-big.jpg");
+}
+
+.circleContainSarker {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/sarker-thumb-big.jpg");
+}
+
+.circleContain1 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/umulis-thumb-big.jpg");
+}
+
+.circleContain2 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/kinzer-ursem-thumb-big.jpg");
+}
+
+.circleContain3 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/bajaj-thumb-big.jpg");
+}
+.circleContain4 {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  background-color: rgba(163,121,44, 0.9);
+  margin-left:auto;
+    margin-right:auto;
+    background-image: url("../images/pharriss-thumb-big.jpg");
+}
+
+
+
+
+.circleContain:hover {
+  opacity: 1.0;
+}
+
+.thumbSkew {
+  text-align: center;
+  height: 100%;
+  position: relative;
+  /***background-color: #a3792c;*/
+background-color: #000;
+  border-left: 2px solid white;
+  -ms-transform: skew(20deg); 
+  -webkit-transform: skew(20deg);
+  -o-transform: skew(20deg);
+    transform: skew(20deg);
+}
+
+
+.unSkew {
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(-20deg);
+  -o-transform: skew(-20deg);
+    transform: skew(-20deg); 
+    color: white;
+    padding: 15% 0;
+    width: 100%;
+    height: 100%;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 18px;
+    text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+    text-transform: uppercase;
+}
+
+.lity-iframe .lity-container, .lity-youtube .lity-container, .lity-vimeo .lity-container, .lity-googlemaps .lity-container {
+    width: 60%;
+    max-width: 60%;
+}
+
+.flip-container {
+  perspective: 1000px;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  height: 100%;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.caption {
+  position: absolute;
+    left: 10px;
+    bottom: 5px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    cursor: auto;
+    display: block;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 32px;
+    text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+    padding: 15px 20px;
+    background-color: #000;
+}
+
+.caption-top {
+  position: top;
+    padding-left: 50px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: auto;
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-shadow: rgb(0, 0, 0) 2px 2px 5px;
+}
+
+/*********lightbox**********/
+.lightbox {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0,0.9);
+  display: none;
+  top: 0px;
+  overflow-y: scroll;
+}
+
+.iframeContain img {
+  width: 60%;
+  
+}
+
+.lightShow {
+  display: block;
+}
+
+.iframeContain {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+
+}
+
+.closeWindow {
+  float: left;
+  color: white;
+}
+
+.closeWindow:hover {
+    cursor: pointer;
+}
+
+video {
+  object-fit: inherit;
+}
+
+.timeline-TweetList {
+  pointer-events: none;
+}

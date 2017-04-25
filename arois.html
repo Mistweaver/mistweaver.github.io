@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bryce Egley Portfolio</title>
+        <!-- Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        
+        <!-- font awesome for icons -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <!--web fonts-->      
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link href="animate.css" rel="stylesheet" type="text/css" media="screen">
+		<!-- lightbox css/js -->
+		<link href="lity-2.0.0/dist/lity.css" rel="stylesheet">
+    	<script src="lity-2.0.0/dist/lity.js"></script>   
+		<!-- custom css -->
+        <link href="portfolio.css" rel="stylesheet" type="text/css" media="screen">
+    	<script src="portfolio.js"></script>
+    	<link href="lightbox.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 lightbox">
+			<div id="lightboxInfo" class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+				<h2>Aerial Robotic Optical Identification System</h2>
+				
+				<p>During the Fall of 2015 I began work with a team on a drone aircraft that could perform sense-and-avoid operations in flight.  Besides working on the flight dynamics of the aircraft, I also began to develop the software and embedded systems on the craft to provide it with autonomous capabilities.</p><br>
+				<p>The aircraft was developed on a budget of approximately $500, and I was allotted approximately 20% of that budget to provide the sensors and hardware necessary to implement the sense-and-avoid system.</p><br>
+				<p>The system was run on a Raspberry Pi 2 Model B and written in Python.  Multiple threads pulled images in realtime from a USB web camera mounted on the wing of the aircraft and analyzed using OpenCV.</p>
+				<p>After numerous lab tests, the system finally achieved proof-of-concept on its third flight test, achieving aerial detection of objects on both a LIDARlite v2 and via computer vision from onboard cameras</p><br>
+				<p>A full report on the system can be provided upon request.</p>
+				
+			</div>
+			<div id="lightboxImages" class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+				<img class="lightboxImage" src="images/fourview.png">
+				<img class="lightboxImage" src="arois2.png">
+				<img class="lightboxImage" src="arois3.png">
+				<img class="lightboxImage" src="image.png">
+			</div>
+		</div>
+	</body>
+</html>
