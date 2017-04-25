@@ -14,7 +14,10 @@
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+		<link href="animate.css" rel="stylesheet" type="text/css" media="screen">
+		<!-- lightbox css/js -->
+		<link href="lity-2.0.0/dist/lity.css" rel="stylesheet">
+    	<script src="lity-2.0.0/dist/lity.js"></script>   
 		<!-- custom css -->
         <link href="portfolio.css" rel="stylesheet" type="text/css" media="screen">
     	<script src="portfolio.js"></script>
@@ -26,7 +29,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="mainSplash">
+		<section id="navbar">
 			<nav class="navbar navbar-default">
 			  	<div class="container-fluid">
 			    	<div class="navbar-header">
@@ -39,14 +42,16 @@
 			    	</div>
 			    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			      		<ul class="nav navbar-nav navbar-right">
-			        		<li><a href="#">About</a></li>
-			        		<li><a href="#">Engineering</a></li>
-			        		<li><a href="#">Development</a></li>
+			        		<li><a href="#main">About</a></li>
+			        		<li><a href="#engineering">Engineering</a></li>
+			        		<li><a href="#development">Development</a></li>
 			      		</ul>
 			    	</div>
 			  	</div>
 			</nav>
-			<div id="mainSplash">
+		</section>
+		<section id="mainSplash">
+			<div id="projectSplash">
 				<div class="container">
 					<div class="row">
 						<div id="main" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
@@ -56,23 +61,23 @@
 							</div>
 							<div id="bio">
 								<h5>Aeronautical and aerospace engineer, web developer, self-taught programmer, and writer with interests in dynamics and control, machine learning, robotics, and sustainable food systems.</h5>
-								<p>Email: bryce.a.egley@gmail.com</p>
-								<p><a href="#">LinkedIn</a></p>
-								<p><a href="#">Github</a></p>
-								<button class="btn">My Resume</button>
+								<p><a href="mailto:bryce.a.egley@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp Email</a></p>
+								<p><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp LinkedIn</a></p>
+								<p><a href="#"><i class="fa fa-github" aria-hidden="true"></i>&nbsp Github</a></p>
+								<a href="BryceEgleyResume.pdf" download><button class="btn">My Resume</button></a>
 							</div>
 						</div>
 						<div id="images" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash wow animated fadeInUp animated" data-wow-duration="700ms" data-wow-delay="100ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 100ms; animation-name: fadeInUp;">
 								<div id="splash1" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash wow animated fadeInUp animated" data-wow-duration="700ms" data-wow-delay="200ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 200ms; animation-name: fadeInUp;"">
 								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash wow animated fadeInUp animated" data-wow-duration="700ms" data-wow-delay="300ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 300ms; animation-name: fadeInUp;"">
 								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash wow animated fadeInUp animated" data-wow-duration="700ms" data-wow-delay="400ms" style="visibility: visible; animation-duration: 700ms; animation-delay: 400ms; animation-name: fadeInUp;"">
 								<div id="splash4" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
 							</div>
 						</div>
@@ -84,36 +89,60 @@
 				<div class="container">
 					<div id="engineering" class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header">
-							<h2>Engineering</h2>
-						</div>
-					</div>
-					<div id="arois" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<h4>Sense and Avoid with Computer Vision</h4>
-							<p>I personally wrote an application in Python utilizing OpenCV to detect objects in-flight.  The application used multiple threads to receive images from a USB camera mounted on the aircraft's wing, provide analysis, and determine any objects that fell within the targeted color hue selected.  The entire program was run on a Raspberry Pi 2 mounted in the aircraft's fuselage</p>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
-								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
-								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bannerText">
+								<h2>Engineering</h2>
+								<p>I studied aeronautical and aerospace engineering at Purdue University, with a focus on dynamics and control systems, Kalman filtering, and finite element analysis.</p>
 							</div>
 						</div>
-					</div>
-					<div id="seniorDesign" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-							<h4>Purdue senior design aircraft</h4>
-							<p>Worked in tandem with a team of five other members to design and build a small aircraft from scratch that fit in a budget under $500, could be disassembled into a medium sized plastic bin, assembled in under ten minutes, and carry the necessary equipment for the aforementioned software program.  Aircraft underwent three successful test flights.</p>
-						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
-								<div id="splash2" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="arois.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project1" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>AROIS</h3>
+									<p>Computer vision application for small drones</p>
+								</div>
 							</div>
-							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 splash">
-								<div id="splash3" class="imageContain col-lg-6 col-md-6 col-sm-6 col-xs-12"></div>
-							</div>
+							</a>
 						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="seniorDesign.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project2" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Senior Design Aircraft</h3>
+									<p>Senior project developing remote aircraft to fit certain design criteria</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="engineeringSoftware.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project3" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Software Experience</h3>
+									<p>Various engineering software programs</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="catia.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project4" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>CATIA designs</h3>
+									<p>CGT 163 design portfolio</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
 					</div>
 				</div>
 				<div class="container">
@@ -122,45 +151,158 @@
 				<div class="container">
 					<div id="development" class="row">
 						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 header">
-							<h2>Web/Software Development</h2>
+							<div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 bannerText">
+								<h2>Web/Software Development</h2>
+								<p>Starting with C and Matlab freshman year, I delved into web development and game development with Java.  I have worked for several departments at Purdue University as well as local businesses and startups for nearly 4 years now.</p>
+							</div>
+							
 						</div>
-					</div>
-					<div id="purdueGEP" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
-							<h4>Interactive Global Engineering Map</h4>
-							<p>Building on mapael.js, I created an interactive Javascript map that allows students and faculty to view a global map that would provide information on Purdue University's Global Engineering program.</p>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="gep.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project5" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Purdue Global Engineering Map GUI</h3>
+									<p>Interactive Javascript map to provide information for study abroad programs</p>
+								</div>
+							</div>
+							</a>
 						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="purdueRugby" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
-							<h4>Purdue Men's Rugby Website</h4>
-							<p>During my time as the Social Media Director for the club, one of my initiatives was to update the team's website.  I designed the project from scratch, and with a PHP backend added a number of dynamic features such as historical rosters, season schedules, and recruiting forms</p>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="rugby.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project6" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Purdue Rugby Homepage</h3>
+									<p>Main website redesign for the Purdue Men's rugby team</p>
+								</div>
+							</div>
+							</a>
 						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="superMariota" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info">
-							<h4>Super Mariota Android Application</h4>
-							<p>Designing all the graphics myself, I wrote my first Android application as a side-scrolling platform game that mimicked Super Mario with a pun on Titans quarterback Marcus Mariota.  
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="supermariota.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project7" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Super Mariota Android Application</h3>
+									<p>Side-scrolling platform jumper for Android phones</p>
+								</div>
+							</div>
+							</a>
 						</div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="aeroGUI" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="javaOpenGL" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="tetris" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
-					</div>
-					<div id="portalTileDemo" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
-						<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 info"></div>
-						<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 images"></div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="https://engineering.purdue.edu/EPICS/teams" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project15" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Purdue EPICS Teams Page</h3>
+									<p>Main directory for Purdue University's EPICS teams with Python backend</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="https://engineering.purdue.edu/GEP/Experiences/GEP-map-interactive/LatinSpainProgram" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project16" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Purdue Latin America Page</h3>
+									<p>Homepage for Purdue University's Latin America/Spain study abroad programs</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="atcGUI.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project8" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Runway Incursion GUI</h3>
+									<p>Interactive interface for air traffic controllers to better report runway incursions</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="datamine.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project9" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Website Data Mining</h3>
+									<p>Program to cull website user data and compile statistics</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="GoTetris.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project10" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Javascript/CSS Game of Thrones Tetris</h3>
+									<p>Tetris.  With some Game of Thrones humor</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="freelance.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project11" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Freelance Websites</h3>
+									<p>Sites designed for local buisnesses</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="mech.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project12" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Java/OpenGL Simulation Project</h3>
+									<p>Personal project recreating an old mech simulation</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="portal.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project13" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>Portal Tile CSS/Javascript Demo</h3>
+									<p>Experimental Javascript demo recreating the Portal 2 menu tile effect</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 projectContain">
+							<a href="CI.html" data-lity>
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 project">
+								<div id="project14" class="projectImageContain"></div>
+								<div class="captionContain">
+									<h3>CharacterInventory.org</h3>
+									<p>Main webpage for startup I redesigned in 2016</p>
+								</div>
+							</div>
+							</a>
+						</div>
+
+						
 					</div>
 				</div>
 			</div>
