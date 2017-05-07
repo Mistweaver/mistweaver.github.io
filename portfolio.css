@@ -243,6 +243,10 @@ html, body {
 .lity-container {
 	width: 100%;
 }
+
+#lightboxInfo {
+	margin-bottom: 15px;
+}
 /***************************LIGHTBOX CSS*******************/
 .lightbox {
 	background-color: black;
