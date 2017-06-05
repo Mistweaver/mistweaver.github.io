@@ -1,10 +1,6 @@
 html, body {
 	margin: 0px;
 	padding: 0px;
-	/*background-image: url("matrixUI2.png");
-	background-size: cover;
-	background-repeat: no-repeat;*/
-	
 }
 
 #portalOverlay {
@@ -43,16 +39,16 @@ html, body {
 }
 
 #splash1 {
-	background-image: url("supermariotascreen2.png");
+	background-image: url("../images/supermariotascreen2.png");
 }
 #splash2 {
-	background-image: url("aircraftflight.jpg");
+	background-image: url("../images/aircraftflight.jpg");
 }
 #splash3 {
-	background-image: url("image.png");
+	background-image: url("../images/image.png");
 }
 #splash4 {
-	background-image: url("ModalAnalysis5.jpg");
+	background-image: url("../images/ModalAnalysis5.jpg");
 }
 
 #splashPage {
@@ -113,11 +109,11 @@ html, body {
 }
 
 #engineering .header {
-	background-image: url("cockpit.jpg");
+	background-image: url("../images/cockpit.jpg");
 }
 
 #development .header {
-	background-image: url("Atlas.jpeg");
+	background-image: url("../images/Atlas.jpeg");
 }
 
 
@@ -153,67 +149,67 @@ html, body {
 }
 
 #project1 {
-	background-image: url("image.png");
+	background-image: url("../images/image.png");
 }
 
 #project2 {
-	background-image: url("aircraftflight.jpg");
+	background-image: url("../images/aircraftflight.jpg");
 }
 
 #project3 {
-	background-image: url("ModalAnalysis4.jpg");
+	background-image: url("../images/ModalAnalysis4.jpg");
 }
 
 #project4 {
-	background-image: url("StereoCase.jpg");
+	background-image: url("../images/StereoCase.jpg");
 }
 
 #project5 {
-	background-image: url("gepScreenCap.jpg");
+	background-image: url("../images/gepScreenCap.jpg");
 }
 
 #project6 {
-	background-image: url("rugbywebsite.jpg");
+	background-image: url("../images/rugbywebsite.jpg");
 }
 
 #project7 {
-	background-image: url("supermariotamainscreen.png");
+	background-image: url("../images/supermariotamainscreen.png");
 }
 
 #project8 {
-	background-image: url("runwayIncursion1.png");
+	background-image: url("../images/runwayIncursion1.png");
 }
 
 #project9 {
-	background-image: url("popgrowth.jpg");
+	background-image: url("../images/popgrowth.jpg");
 }
 
 #project10 {
-	background-image: url("GoTetris.png");
+	background-image: url("../images/GoTetris.png");
 }
 
 #project11 {
-	background-image: url("bobbyts.png");
+	background-image: url("../images/bobbyts.png");
 }
 
 #project12 {
-	background-image: url("mech1.jpg");
+	background-image: url("../images/mech1.jpg");
 }
 
 #project13 {
-	background-image: url("portalTileDemo.png");
+	background-image: url("../images/portalTileDemo.png");
 }
 
 #project14 {
-	background-image: url("characterinventory.png");
+	background-image: url("../images/characterinventory.png");
 }
 
 #project15 {
-	background-image: url("epicsTeams.png");
+	background-image: url("../images/epicsTeams.png");
 }
 
 #project16 {
-	background-image: url("latinSpain2.png");
+	background-image: url("../images/latinSpain2.png");
 }
 
 .projectContain {
