@@ -1,0 +1,242 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+}
+
+.openingQuote {
+    color: white;
+    font-family: 'Times New Roman', Times, serif
+}
+
+#quoteAnimation1 {
+	opacity: 0;
+	animation: cinematicFade 7s linear;
+	animation-delay: 2s;
+	animation-iteration-count: 1;
+}
+#quoteAnimation2 {
+	opacity: 0;
+	animation: cinematicFade 7s linear;
+	animation-delay: 3s;
+	animation-iteration-count: 1;
+}
+#quoteAnimation3 {
+	opacity: 0;
+	animation: cinematicFade 7s linear;
+	animation-delay: 4s;
+	animation-iteration-count: 1;
+}
+#quoteAnimation4 {
+	opacity: 0;
+	animation: cinematicFade 7s linear;
+	animation-delay: 6s;
+	animation-iteration-count: 1;
+}
+#quoteAnimation5 {
+	opacity: 0;
+	animation: cinematicFade 7s linear;
+	animation-delay: 7s;
+	animation-iteration-count: 1;
+}
+
+@keyframes cinematicFade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+  }
+
+#content {
+	overflow: hidden;
+}
+
+.headerBox {
+	text-align: right;
+    position: fixed;
+    top: 0;
+	right: 0;
+    z-index: 99;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 40px 60px;
+}
+.headerBox a {
+	color: #f50057;;
+}
+
+.buffered-container {
+	margin: 20px 0px;
+}
+
+.content-body {
+	/*image source need to cite https://www.flickr.com/photos/igorputina/22856247274 */
+	min-height: 100vh;
+	display: flex;
+	position: relative;
+	z-index: 2;
+}
+#quoteBox {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1001;
+	height: 100vh;
+}
+
+#mainText {
+	background-image: url("titanfall.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+    background-color: black;
+}
+
+.typeBox {
+	margin: auto;
+	margin-left: 20%;
+	align-items: flex-start;
+	width: 30%;
+}
+
+.offset1 {
+	margin-top: 25px;
+}
+
+.fixedSideBarNav {
+	align-items: flex-start;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: transparent;
+	padding: 10px;
+	padding-left: 30px;
+	z-index: 999;
+	display: flex;
+	height: 100%;
+}
+
+.fixedSideBarNav ul {
+	margin: auto;
+	align-items: flex-start;
+}
+
+.fixedSideBarNav li {
+	margin: 6vh 10px;
+	list-style: none;
+	color: lightseagreen;
+}
+
+.fixedSideBarNav li:hover {
+	color: white;
+	cursor: pointer;
+}
+
+.gridContainer {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	padding-top: 11vh;
+	text-align: center;
+}
+
+.mainContainer {
+	text-align: left;
+}
+
+.media {
+	height: 0;
+	padding-top: 26.25%;
+	text-align: center;
+}
+
+.secondaryContainer {
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: black;
+	color: white;
+	height: 25vh;
+}
+
+.dataBox {
+	width: 33.33%;
+	border: 2px solid white;
+	display: inline-block;
+}
+
+.opaque {
+    opacity: 0;
+}
+  
+#fadeBox {
+	background-color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+	height: 100vh;
+    animation: cinematicFadeOut 7s linear;
+    animation-delay: 7s;
+    animation-iteration-count: 1;
+}
+
+@keyframes cinematicFadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes cinematicFadeOut {
+	from { opacity: 1; }
+	to { opacity: 0; }
+}
+
+.imageText {
+	vertical-align: middle;
+	font-size: 62px;
+    font-weight: 500;
+    line-height: 68px;
+    opacity: 1;
+	letter-spacing: -.02096774em;
+	margin-bottom: 20px;
+}
+
+.primaryText {
+	vertical-align: middle;
+	font-size: 45px;
+    font-weight: 700;
+    line-height: 68px;
+    opacity: 1;
+	letter-spacing: -.02096774em;
+	margin-bottom: 20px;
+}
+
+.primarySubText {
+	font-size: 35px;
+}
+
+.secondaryText {
+	color: white;
+	vertical-align: middle;
+	font-size: 45px;
+    font-weight: 500;
+    line-height: 68px;
+    opacity: 1;
+	letter-spacing: -.02096774em;
+	margin-bottom: 20px;
+}
+
+.secondarySubText {
+	color: white;
+}
+
+.productInfoRow {
+	max-height: 40vh;
+	overflow: hidden;
+}
+
+.textSpan {
+	background-color: white;
+}
+
+#info1 { background-image: url("titanfall.gif"); }
