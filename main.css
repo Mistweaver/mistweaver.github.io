@@ -11,32 +11,32 @@ html, body {
 
 #quoteAnimation1 {
 	opacity: 0;
-	animation: cinematicFade 7s linear;
-	animation-delay: 2s;
+	animation: cinematicFade 11s linear;
+	animation-delay: 1s;
 	animation-iteration-count: 1;
 }
 #quoteAnimation2 {
 	opacity: 0;
-	animation: cinematicFade 7s linear;
+	animation: cinematicFade 10s linear;
 	animation-delay: 3s;
 	animation-iteration-count: 1;
 }
 #quoteAnimation3 {
 	opacity: 0;
-	animation: cinematicFade 7s linear;
-	animation-delay: 4s;
+	animation: cinematicFade 8s linear;
+	animation-delay: 5s;
 	animation-iteration-count: 1;
 }
 #quoteAnimation4 {
 	opacity: 0;
 	animation: cinematicFade 7s linear;
-	animation-delay: 6s;
+	animation-delay: 7s;
 	animation-iteration-count: 1;
 }
 #quoteAnimation5 {
 	opacity: 0;
 	animation: cinematicFade 7s linear;
-	animation-delay: 7s;
+	animation-delay: 8s;
 	animation-iteration-count: 1;
 }
 
