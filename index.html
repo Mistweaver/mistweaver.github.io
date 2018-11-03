@@ -6,21 +6,33 @@
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <script src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" type="text/css" href="loader.css">
+		<link rel="stylesheet" type="text/css" href="pacman.css">
+
+		<script src="main.js"></script>
+		<script src="pacman.js"></script>
 
     </head>
     <body>
             <div class="headerBox">
-			</div>
+				<!--div class="loader"></div-->
+				<div class="header-li">
+					<h3>Bryce Egley</h3>
+					<p class="subheader-li">
+						<a href="mailto:bryce.a.egley@gmail.com">bryce.a.egley@gmail.com</a>
+					</p>
+				</div>
 			<div id="fadeBox"></div>
-			<div class="fixedSideBarNav">
+			<div class="fixedSideBarNav col-3">
 				<ul>
-					<li href="#">Home</li>
-					<li href="#">About</li>
-					<li href="#">Web Development</li>
-					<li href="#">Robotics</li>
-					<li href="#">Engineering</li>
+					
+					<li><a href="#background">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#webprojects">Web Projects</a></li>
+					<li><a href="#robotics">Robotics</a></li>
+					<li><a href="#aerospace">Aerospace Engineering</a></li>
+					<li><a href="#videogames">Video Games</a></li>
 				</ul>
 			</div>
 			<div id="quoteBox" ref={this.mainText} class="content-body">
@@ -37,23 +49,113 @@
 					</div>
 				</div>
 			</div>
-			<div id="mainText" ref={this.mainText} class="content-body">
-				<div class="typeBox">
-					<!--Typography class="flex" variant="title" color="inherit">
-						Cimacorp News API
-					</Typography>
-					<Typography class="flex" variant="display3" color="inherit">
-						{/*<img src={logo} class="App-logo" alt="logo" />*/}
-						<h1 class="imageText">Curate custom news feeds for your buisness or website</h1>
-					</Typography>
-					<Typography class="flex" variant="title" color="textSecondary">
-						Here at Cimacorp we use modern algorithms to analyze news stories based on your search terms, giving you smarter and broader reaching feeds.
-					</Typography>
-					<div class="offset1">
-						<Typography class="flex" variant="title" color="secondary">
-							Cimacorp.  Data Evolved.
-						</Typography-->
+			<div name="background" id="background" class="content-body fieldsection "></div>
+			<div id="content">
+				<div name="about" id="about" class="fieldsection col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-3" style="background-color: black;">
+							</div>
+							<div id="aboutimage" class="col-5 imagePanel">
+							</div>
+							<div id="aboutInfoPanel" class="col-4">
+								<h4 style="font-family: 'Blair ITC'">
+									My name is Bryce Egley.
+								</h4>
+								<p>The greatest tragedy of growing up is learning that dragons do not
+									actually exist.  Age robs the world of the magic we viewed through the lens of adolescence.
+									While the rest of my peers set aside such childhood
+									fantasies, I set out to blur the line between my dreams and my reality.
+								</p>
+								<p>I long aspired to be a professional bum, but I ended up settling in life for studying
+									aerospace engineering at Purdue University.  During the course
+									of my studies I became a self-taught software and web developer, and now know my way around
+									a terminal.  I am a creator, a writer, an entreprenuer.  When that 
+									becomes mundane, to pass the time I go out and tackle large, sweaty men (i.e. I go play rugby).
+								</p>
+								<p>Somewhere between the digital frontier and the tactile terra we occupy exists a more perfect
+									union between two worlds.  The advent of artificial intelligence, robotics, the world wide web - all now
+									accessible by billions of individuals through smartphones - has brought about an age unseen 
+									in the existence of humanity.  And what lies ahead is beyond our wildest imaginations.
+								</p>
+								
+							</div>
+						</div>
 					</div>
+				</div>
+				<div id="webprojects" name="webprojects" class="fieldsection  col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div id="webprojectsimage" class="col-4 imagePanel">
+							</div>
+							<div id="aboutInfoPanel" class="col-8">
+								<h4 style="font-family: 'Blair ITC'">
+									Web Projects
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="robotics" name="robotics" class="fieldsection  col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div id="roboticsimage" class="col-4 imagePanel">
+							</div>
+							<div id="aboutInfoPanel" class="col-8">
+								<h4 style="font-family: 'Blair ITC'">
+									Robotics
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="aerospace" name="aerospace" class="fieldsection  col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div id="aerospaceimage" class="col-4 imagePanel">
+							</div>
+							<div id="aboutInfoPanel" class="col-8">
+								<h4 style="font-family: 'Blair ITC'">
+									Aerospace Engineering
+								</h4>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="videogames" name="videogames" class="fieldsection col-12">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-3"></div>
+							<div id="arenacontainer" class="col-9">
+									<h4 style="font-family: 'Blair ITC'">
+											Video Games
+									</h4>
+									<div id="fpsDisplay"></div>
+								<div id="arena" class="col-12">
+									<div id="pacman" class="pacman">
+										<div class="pacman-top"></div>
+										<div class="pacman-bottom"></div>
+										<div class="feed"></div>
+									</div>
+									<div class="row">
+											<div id="javawarrior" class="videoGameProjectBox col-3">
+
+												</div>
+												<div class="col-1"></div>
+												<div id="supermariota" class="videoGameProjectBox col-3">
+			
+												</div>
+												<div class="col-1"></div>
+												<div id="gameofthronestetris" class="videoGameProjectBox col-3">
+			
+												</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+					
 				</div>
 			</div>
     </body>
