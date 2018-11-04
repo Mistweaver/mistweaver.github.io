@@ -28,9 +28,9 @@ $(document).ready(function() {
         // console.log("Delta: " + delta);
         if(playerInsideArena) {
             boxVelocity = 0.2;
-            console.log("Player position: " + playerXPosition + "," + playerYPosition);
-            console.log("Pacman position: " + pacman.offsetLeft + " " + pacman.offsetTop);
-            console.log("Pacman dimensions: " + pacman.offsetHeight + " " + pacman.offsetWidth);
+            // console.log("Player position: " + playerXPosition + "," + playerYPosition);
+            // console.log("Pacman position: " + pacman.offsetLeft + " " + pacman.offsetTop);
+            // console.log("Pacman dimensions: " + pacman.offsetHeight + " " + pacman.offsetWidth);
             pacmanLastXPosition = pacmanXPosition;
             pacmanLastYPosition = pacmanYPosition;
             if(playerXPosition > pacmanXPosition) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
     function draw(interp) {
         pacman.style.left = (pacmanLastXPosition + (pacmanXPosition - pacmanLastXPosition) * interp) + 'px';
-        pacman.style.top = (pacmanLastYPosition + (pacmanYPosition - pacmanLastYPosition) * interp) - (pacman.offsetWidth / 2) + 'px';
+        pacman.style.top = (pacmanLastYPosition + (pacmanYPosition - pacmanLastYPosition) * interp)  + 'px'; //- (pacman.offsetWidth / 2)
         let style = "rotate(" + ((Math.atan2((playerXPosition - pacmanXPosition), (playerYPosition - pacmanYPosition)) * (180 / Math.PI) * -1) + 90)+ "deg)"
         pacman.style.transform = style;
         pacman.style.webkitTransform = style;
@@ -122,7 +122,7 @@ $(document).ready(function() {
     container.addEventListener("mousemove", function(event) {
         playerXPosition = event.offsetX; // + Math.floor(event.offsetWidth / 2);
         playerYPosition = event.offsetY; // + Math.floor(event.offsetHeight / 2);
-        console.log("Mouse offset position: " + event.offsetX + " " + event.offsetY);
+        // console.log("Mouse offset position: " + event.offsetX + " " + event.offsetY);
 
     })
     container.addEventListener("mouseenter", function() {

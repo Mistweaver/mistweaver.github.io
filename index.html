@@ -15,50 +15,44 @@
 
     </head>
     <body>
-            <div class="headerBox">
-				<!--div class="loader"></div-->
-				<div class="header-li">
-					<h3>Bryce Egley</h3>
-					<p class="subheader-li">
-						<a href="mailto:bryce.a.egley@gmail.com">bryce.a.egley@gmail.com</a>
-					</p>
-				</div>
-			<div id="fadeBox"></div>
-			<div class="fixedSideBarNav col-3">
-				<ul>
-					
-					<li><a href="#background">Home</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#webprojects">Web Projects</a></li>
-					<li><a href="#robotics">Robotics</a></li>
-					<li><a href="#aerospace">Aerospace Engineering</a></li>
-					<li><a href="#videogames">Video Games</a></li>
+		<nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+			<!--a class="navbar-brand" href="#">Bryce Egley | bryce.a.egley@gmail.com</a>-->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a id="homeLink" class="nav-link active" href="#frontpage">Home</a></li>
+					<li class="nav-item"><a id="aboutLink" class="nav-link" href="#about">About</a></li>
+					<li class="nav-item"><a id="webprojectLink" class="nav-link" href="#webprojects">Web Projects</a></li>
+					<li class="nav-item"><a id="aerospaceLink" class="nav-link" href="#aerospace">Aerospace Engineering</a></li>
+					<li class="nav-item"><a id="roboticsLink" class="nav-link" href="#robotics">Robotics</a></li>
+					<li class="nav-item"><a id="videogamesLink" class="nav-link" href="#videogames">Video Games</a></li>
 				</ul>
 			</div>
-			<div id="quoteBox" ref={this.mainText} class="content-body">
-				<div class="typeBox">
-					<h3 class="openingQuote">
-						<span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
-						<span id="quoteAnimation2">You imagine what you desire,</span>
-						<span id="quoteAnimation3">you will what you imagine,</span>
-						<span id="quoteAnimation4">and, at last, you create what you will."</span> 
-					</h3>
-					<h3 class="openingQuote">
-						<span id="quoteAnimation5">-George Bernard Shaw</span>
-					</h3>
-					</div>
+		</nav>
+		<div id="frontpage" class="imagePanel col-12">
+			<div class="typeBox">
+				<h3 class="openingQuote">
+					<span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
+					<span id="quoteAnimation2">You imagine what you desire,</span>
+					<span id="quoteAnimation3">you will what you imagine,</span>
+					<span id="quoteAnimation4">and, at last,</span>
+					<span id="quoteAnimation5">you create what you will."</span> 
+				</h3>
+				<h3 class="openingQuote">
+					<span id="quoteAnimation6">-George Bernard Shaw</span>
+				</h3>
 				</div>
 			</div>
-			<div name="background" id="background" class="content-body fieldsection "></div>
-			<div id="content">
-				<div name="about" id="about" class="fieldsection col-12">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-3" style="background-color: black;">
-							</div>
-							<div id="aboutimage" class="col-5 imagePanel">
-							</div>
-							<div id="aboutInfoPanel" class="col-4">
+		</div>
+		<div id="about" class="col-12">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+					<div class="row">
+						<div id="aboutimage" class="col-7"></div>
+						<div id="abouttext" class="col-5">
 								<h4 style="font-family: 'Blair ITC'">
 									My name is Bryce Egley.
 								</h4>
@@ -78,85 +72,239 @@
 									accessible by billions of individuals through smartphones - has brought about an age unseen 
 									in the existence of humanity.  And what lies ahead is beyond our wildest imaginations.
 								</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-2"></div>
+			</div>
+					
+		</div>
+		<div id="webprojects" class="section col-12">
+			<div class="projectbox">
+				<div class="box-left">
+					<!--p class="date">1/1/3000</p>-->
+					<h2 class="title">MLRStats.com</h2>
+					<p class="description">
+						3rd-party website to track stats and analysis for Major League Rugby.
+					</p>
+					<p id="techstack">
+						<b>Stack:</b> MongoDB backed by a Kotlin API.  Amazon Web Services used
+						for deployment.
+					</p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+			<div class="projectbox">
+				<div class="box-left">
+					<h2 class="title">
+						Test title
+					</h2>
+					<p class="description">
+						Get some ipsom lorem up in this bitch!
+					</p>
+					<p id="techstack"></p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+			<div class="projectbox">
+				<div class="box-left">
+					<h2 class="title"></h2>
+					<p class="description"></p>
+					<p id="techstack"></p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+			<div class="projectbox">
+				<div class="box-left">
+					<h2 class="title"></h2>
+					<p class="description"></p>
+					<p id="techstack"></p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div id="aerospace" class="col-12">
+			<div class="projectbox">
+				<div class="box-left">
+					<h2 class="title"></h2>
+					<p class="description"></p>
+					<p id="techstack"></p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+			<div class="projectbox">
+				<div class="box-left">
+					<h2 class="title"></h2>
+					<p class="description"></p>
+					<p id="techstack"></p>
+				</div>
+				<div class="box-right">
+					<img src="enginedemo.gif" class="img-fluid">
+				</div>
+			</div>
+		</div>
+		<div id="robotics" class="col-12"></div>
+		<div id="videogames" class="col-12">
+				<!--h4 style="font-family: 'Blair ITC'">
+						Video Games
+				</h4>-->
+			<div class="row">
+				<div id="gameProjects" class="col-5">
+					<div class="gameprojectbox">
+						<div class="box-left">
+							<h2 class="title">
+								Mechwarrior Java
+							</h2>
+							<p class="description">
+								A reimagining/remastering of the 90's classic.
+							</p>
+							<p id="techstack">
+								<b>Stack:</b> Java, OpenGL, LWJGL 2.0
+							</p>
+						</div>
+						<div class="box-right">
+							<img src="enginedemo.gif" class="img-fluid">
+						</div>
+					</div>
+					<div class="gameprojectbox">
+						<div class="box-left">
+							<h2 class="title">
+								Super Mariota
+							</h2>
+							<p class="description">
+								A simple side-scrolling platform jumper.  Now with extra puns!
+							</p>
+							<p id="techstack">
+								<b>Stack:</b> Android OS, Java
+							</p>
+						</div>
+						<div class="box-right">
+							<img src="supermariotamainscreen.png" class="img-fluid">
+						</div>
+					</div>
+					<div class="gameprojectbox">
+						<div class="box-left">
+							<h2 class="title">
+								Game of Thrones Tetris
+							</h2>
+							<p class="description">
+								Self explanatory: it's Tetris with some Game of Thrones flavor.
+							</p>
+							<p id="techstack"><b>Stack:</b> Vanilla Javascript baby!</p>
+						</div>
+						<div class="box-right">
+							<!--div class="thumbnail" style="background-image: url('GoTetris.png');"></div>-->
+							<img src="GoTetris.png" class="img-fluid">
+						</div>
+					</div>
+				</div>
+				<div id="arenacontainer" class="col-7">
+					<div id="fpsDisplay"></div>
+					<div id="arena">
+						<div id="pacman" class="pacman">
+							<div class="pacman-top"></div>
+							<div class="pacman-bottom"></div>
+							<div class="feed"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--div class="headerBox">
+			<div class="header-li">
+				<h3>Bryce Egley</h3>
+				<p class="subheader-li">
+					<a href="mailto:bryce.a.egley@gmail.com">bryce.a.egley@gmail.com</a>
+				</p>
+			</div>
+		<div id="content">
+			<div name="about" id="about" class="fieldsection col-12">
+				
+			</div>
+			<div id="webprojects" name="webprojects" class="fieldsection  col-12">
+				<div class="container-fluid">
+					<div class="row">
+						<div id="webprojectsimage" class="col-4 imagePanel">
+						</div>
+						<div id="aboutInfoPanel" class="col-8">
+							<h4 style="font-family: 'Blair ITC'">
+								Web Projects
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="robotics" name="robotics" class="fieldsection  col-12">
+				<div class="container-fluid">
+					<div class="row">
+						<div id="roboticsimage" class="col-4 imagePanel">
+						</div>
+						<div id="aboutInfoPanel" class="col-8">
+							<h4 style="font-family: 'Blair ITC'">
+								Robotics
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="aerospace" name="aerospace" class="fieldsection  col-12">
+				<div class="container-fluid">
+					<div class="row">
+						<div id="aerospaceimage" class="col-4 imagePanel">
+						</div>
+						<div id="aboutInfoPanel" class="col-8">
+							<h4 style="font-family: 'Blair ITC'">
+								Aerospace Engineering
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="videogames" name="videogames" class="fieldsection col-12">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-3"></div>
+						<div id="arenacontainer" class="col-9">
+								<h4 style="font-family: 'Blair ITC'">
+										Video Games
+								</h4>
+								<div id="fpsDisplay"></div>
+							<div id="arena" class="col-12">
+								<div id="pacman" class="pacman">
+									<div class="pacman-top"></div>
+									<div class="pacman-bottom"></div>
+									<div class="feed"></div>
+								</div>
+								<div class="row">
+										<div id="javawarrior" class="videoGameProjectBox col-3">
+
+											</div>
+											<div class="col-1"></div>
+											<div id="supermariota" class="videoGameProjectBox col-3">
+		
+											</div>
+											<div class="col-1"></div>
+											<div id="gameofthronestetris" class="videoGameProjectBox col-3">
+		
+											</div>
+								</div>
 								
 							</div>
 						</div>
 					</div>
 				</div>
-				<div id="webprojects" name="webprojects" class="fieldsection  col-12">
-					<div class="container-fluid">
-						<div class="row">
-							<div id="webprojectsimage" class="col-4 imagePanel">
-							</div>
-							<div id="aboutInfoPanel" class="col-8">
-								<h4 style="font-family: 'Blair ITC'">
-									Web Projects
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="robotics" name="robotics" class="fieldsection  col-12">
-					<div class="container-fluid">
-						<div class="row">
-							<div id="roboticsimage" class="col-4 imagePanel">
-							</div>
-							<div id="aboutInfoPanel" class="col-8">
-								<h4 style="font-family: 'Blair ITC'">
-									Robotics
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="aerospace" name="aerospace" class="fieldsection  col-12">
-					<div class="container-fluid">
-						<div class="row">
-							<div id="aerospaceimage" class="col-4 imagePanel">
-							</div>
-							<div id="aboutInfoPanel" class="col-8">
-								<h4 style="font-family: 'Blair ITC'">
-									Aerospace Engineering
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div id="videogames" name="videogames" class="fieldsection col-12">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-3"></div>
-							<div id="arenacontainer" class="col-9">
-									<h4 style="font-family: 'Blair ITC'">
-											Video Games
-									</h4>
-									<div id="fpsDisplay"></div>
-								<div id="arena" class="col-12">
-									<div id="pacman" class="pacman">
-										<div class="pacman-top"></div>
-										<div class="pacman-bottom"></div>
-										<div class="feed"></div>
-									</div>
-									<div class="row">
-											<div id="javawarrior" class="videoGameProjectBox col-3">
-
-												</div>
-												<div class="col-1"></div>
-												<div id="supermariota" class="videoGameProjectBox col-3">
-			
-												</div>
-												<div class="col-1"></div>
-												<div id="gameofthronestetris" class="videoGameProjectBox col-3">
-			
-												</div>
-									</div>
-									
-								</div>
-							</div>
-						</div>
-					</div>
-					
-				</div>
+				
 			</div>
+		</div>-->
     </body>
 </html>

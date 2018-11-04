@@ -3,76 +3,132 @@
 	src: url("blairITC.otf");
 	src: url("blairITC.otf") format("opentype");
 }
+
+@font-face {
+	font-family: "Rubik";
+	src: url("Rubik-Regular.ttf");
+	src: url("Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("Montserrat-Regular.ttf");
+	src: url("Montserrat-Regular.ttf") format("truetype");
+}
+
 html, body {
     margin: 0px;
     padding: 0px;
-	background-color: black;
+	background-color: white;
 	scroll-behavior: smooth;
-	
 }
 
-/************ z-index layering 
+#navbar {
+	transition: all .3s ease-in-out;
+}
+.navbar {
+	width: 100%;
+	position: fixed;
+    top: 0;
+    z-index: 10;
+	background-color: transparent;
+}
 
-top: quotebox: the top level.  This shows once and goes away
-1: fadebox Fades out during quotebox;
-2: bufferbox: this is transparent.
-3: contentbox: this holds all your projects;
+#frontpage {
+	background-image: url("whitesandsnm_hdr.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
+}
 
-bottom: background
+.navbar-brand {
+	font-family: 'Blair ITC';
+	color: lightseagreen;
 
-background constantly sits on the left;
+}
+.nav-link {
+	font-family: 'Blair ITC';
+	color: lightseagreen;
+}
 
-***************/
+.nav-link:hover {
+	border-bottom: 2px solid black;
+}
+
+.active {
+	border-bottom: 2px solid black;
+}
+
+
+li.nav-item {
+    margin: 5px 12px;
+}
+ul {
+	margin: auto;
+}
 
 /******OPENING QUOTE******/
 .openingQuote {
-    color: white;
+    color: black;
     font-family: 'Times New Roman', Times, serif
 }
 
 #quoteAnimation1 {
 	opacity: 0;
-	animation: cinematicFade 11s linear;
-	animation-delay: 1s;
+	animation: cinematicFadeIn 2s linear;
+	animation-delay: 0.5s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 #quoteAnimation2 {
 	opacity: 0;
-	animation: cinematicFade 10s linear;
+	animation: cinematicFadeIn 2s linear;
 	animation-delay: 3s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 #quoteAnimation3 {
 	opacity: 0;
-	animation: cinematicFade 8s linear;
-	animation-delay: 5s;
+	animation: cinematicFadeIn 2s linear;
+	animation-delay: 4.5s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 #quoteAnimation4 {
 	opacity: 0;
-	animation: cinematicFade 7s linear;
-	animation-delay: 7s;
+	animation: cinematicFadeIn 2s linear;
+	animation-delay: 6s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
 }
 #quoteAnimation5 {
 	opacity: 0;
-	animation: cinematicFade 7.5s linear;
-	animation-delay: 8s;
+	animation: cinematicFadeIn 2s linear;
+	animation-delay: 7.5s;
 	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+#quoteAnimation6 {
+	opacity: 0;
+	animation: cinematicFadeIn 2s linear;
+	animation-delay: 9s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+.typeBox {
+	padding-top:30vh;
+	margin: auto;
+	margin-left: 20%;
+	align-items: flex-start;
+	width: 30%;
 }
 
 @keyframes cinematicFade {
-	0%,100% { opacity: 0 }
-	50% { opacity: 1 }
-}
-
-  #quoteBox {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	z-index: 1001;
-	height: 100vh;
+	/*0%,100% { opacity: 1 }
+	50% { opacity: 1 }*/
+	0% { opacity: 0 }
+	100% {opacity: 1}
 }
 
 
@@ -101,7 +157,7 @@ background constantly sits on the left;
 	list-style: none;
 	color: lightseagreen;
 	letter-spacing: 3px;
-	font-family: Blair ITC;
+	font-family: 'Blair ITC';
 }
 
 .subheader-li {
@@ -132,17 +188,7 @@ background constantly sits on the left;
 	50% { border-color: lightseagreen; }
   }
 
-.content-body {
-	min-height: 100vh;
-	display: flex;
-	position: relative;
-	z-index: 2;
-}
-
-/********** content box ********/
-
-
-#content {
+  #content {
 	background-color: transparent;
 	width: 100%;
 	z-index: 999;
@@ -157,27 +203,106 @@ background constantly sits on the left;
 	background-repeat: no-repeat;
 	height: 100vh;
 }
+
+.section {
+	padding: 40px 160px;
+}
+
+/********** project box ********/
+.projectbox {
+	max-width: 850px;
+	max-height: 400px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px hsla(0,0%,71.4%,.5);
+    display: flex;
+    cursor: pointer;
+	transition: all .4s ease-in-out;
+	/*font-family: 'Blair ITC';*/
+	margin-bottom: 20px;
+}
+
+.gameprojectbox {
+	max-width: 850px;
+    background-color: #fff;
+    margin: auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 3px hsla(0,0%,71.4%,.5);
+    display: flex;
+    cursor: pointer;
+	transition: all .4s ease-in-out;
+	/*font-family: 'Blair ITC';*/
+	margin-bottom: 20px;
+}
+
+.projectbox:hover, .gameprojectbox:hover {
+	-webkit-transform: scale(1.02);
+    transform: scale(1.02);
+    box-shadow: 0 3px 15px hsla(0,0%,71.4%,.5);
+}
+
+.box-right {
+	overflow: hidden;
+	width: 50%;
+}
+
+.thumbnail {
+    background-repeat: no-repeat;
+    background-size: contain;
+	transition: all .4s ease-in-out;
+	width: 100%;
+}
+.box-left {
+	padding: 25px 35px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.date {
+	font-family: 'Times New Roman', Times, serif;
+	margin-top: 0;
+	font-weight: 500;
+    opacity: .4;
+    margin-bottom: 1px;
+    letter-spacing: .3px;
+}
+
+.title {
+	font-family: 'Blair ITC';
+	letter-spacing: .5px;
+	/*font-weight: 700;*/
+	margin-top: 0;
+}
+
+.description {
+	font-family: 'Times New Roman', Times, serif;
+
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+
 /*********** about *************/
+
+#about {
+	background-color: white;
+	min-height: 100vh;
+	padding-top: 10vh;
+}
 #aboutimage {
 	background-image: url("morningnews.jpg");
+	height: 80vh;
 }
 
 #aboutInfoPanel {
-	color: white;
-	color: white;
+	color: black;
     margin: auto;
-	
 }
 
-#aboutInfoPanel p {
-	margin-top: 25px;
-}
-
-.typeBox {
+#aboutText {
 	margin: auto;
-	margin-left: 20%;
-	align-items: flex-start;
-	width: 30%;
+	padding: 0px 30px;
 }
 
 .offset1 {
@@ -186,80 +311,69 @@ background constantly sits on the left;
 
 
 /******* web projects *******/
-#webprojectsimage {
-	background-image: url("morningnews.jpg");
+#webprojects {
+	min-height: 100vh;
+	padding-top: 10vh;
+	background-image: url("officeview.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
 }
+
 /******* robotics *********/
-#roboticsimage {
-	background-image: url("morningnews.jpg");
+#robotics {
+	min-height: 100vh;
+	padding-top: 10vh;
+	background-image: url("chalkboard.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
 }
 /******* aerospace *******/
-#aerospaceimage {
-	background-image: url("morningnews.jpg");
+#aerospace {
+	min-height: 100vh;
+	padding-top: 10vh;
+	background-image: url("dar-mondays-17.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+    background-attachment: fixed;
 }
 /******* video games ******/
 #videogames {
-	background-color: black;
+	background-color: white;
+	min-height: 100vh;
+	padding-top: 10vh;
 }
 #videogamesimage {
 	background-image: url("morningnews.jpg");
 }
 
 #arena {
-	border: 3px solid red;
-	border-radius: 25px;
-	height: 80vh;
+	border: 3px solid black;
+	/*border-radius: 25px;*/
+	max-height: 80vh;
+	cursor: url('Pac-Man-Ghost.png'), auto;
+	height: 100%;
 }
 
 #arenacontainer {
-	margin-top: 5vh;
-	color: white;
+	color: black;
 }
 
 .videoGameProjectBox {
-	border: 3px solid red;
-	border-radius: 25px;
-	padding: 20px;
+	border: 3px solid black;
+	/*border-radius: 25px;*/
+	display: inline-block;
+}
+
+#gameProjects {
+	/*max-height: 80vh;
+	overflow: scroll;*/
 }
 /************** SIDE BAR *************/
 
-.fixedSideBarNav {
-	align-items: flex-start;
-	position: fixed;
-	left: 0;
-	top: 0;
-	background-color: transparent;
-	padding: 10px;
-	padding-left: 30px;
-	z-index: 999;
-	display: none;
-	height: 100%;
-	font-family: 'Blair ITC';
-	letter-spacing: 3px;
-	font-size: 9pt;
-}
 
-
-.fixedSideBarNav ul {
-	margin: auto;
-	align-items: flex-start;
-}
-
-.fixedSideBarNav li {
-	margin: 6vh 10px;
-	list-style: none;
-	color: lightseagreen;
-}
-
-.fixedSideBarNav li:hover {
-	color: white;
-	cursor: pointer;
-}
-
-.fixedSideBarNav a:hover {
-	color: white;
-	text-decoration: none;
-}
 
 /************ THIS BOX FADES OUT TO REVEAL THE BACKGROUND *************/
 #fadeBox {
