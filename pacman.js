@@ -3,12 +3,17 @@ $(document).ready(function() {
     let container = document.getElementById("arena");
     let box = document.getElementById("pacman");
     let pacman = document.getElementById("pacman");
+    let pacmanDisplay = document.getElementById("pacmanDisplay");
     let fpsDisplay = document.getElementById('fpsDisplay');
+    let lifeDisplay = document.getElementById('lifeDisplay');
+    // debug elements
+    let centerDot = document.getElementById('centerDot');
+    let positionDot = document.getElementById('positionDot');
     let boxPos = 10;
     let pacmanXPosition = pacman.offsetLeft; // - (pacman.offsetWidth / 2); 
     let pacmanYPosition = pacman.offsetTop; // - (pacman.offsetHeight / 2);
-    let pacmanLastXPosition = pacman.offsetLeft;
-    let pacmanLastYPosition = pacman.offsetTop;
+    let pacmanLastXPosition; // = pacman.offsetLeft;
+    let pacmanLastYPosition; // = pacman.offsetTop;
     let lastBoxPos = 10;
     let boxVelocity = 0.2;
     let limit = 300;
@@ -22,7 +27,7 @@ $(document).ready(function() {
     let playerXPosition = 200;
     let playerYPosition = 23;
     let playerInsideArena = false;
-
+    pacman.style.transform = "rotate(0deg)";
     function update(delta) {
         // console.log("Update");
         // console.log("Delta: " + delta);
@@ -49,18 +54,30 @@ $(document).ready(function() {
         }
         
         // check arena boundary conditions
+        // console.log("Pacman dimensions: " + pacman.offsetWidth + " (width), " + pacman.offsetHeight + " (height)");
+        // console.log("Pacman center: " + (pacman.offsetWidth / 2) + " " + (pacman.offsetHeight / 2) );
+        // if (center of pacman + radius is less than top boundary, less than left boundary, greater than right boundary, greater than bottom boundary)
+            // reverse direction
         // check div boundary conditions
+        // if center collides with object in arena, reverse direction
+        // if center collides with player, lose a life
     }
 
     function draw(interp) {
+        positionDot.style.left = pacman.offsetLeft + 'px';
+        positionDot.style.top =pacman.offsetTop + 'px';
+        centerDot.style.left =  pacman.offsetLeft + (pacman.offsetWidth / 2) + 'px';
+        centerDot.style.top =pacman.offsetTop + (pacman.offsetHeight / 2) + 'px';
         pacman.style.left = (pacmanLastXPosition + (pacmanXPosition - pacmanLastXPosition) * interp) + 'px';
-        pacman.style.top = (pacmanLastYPosition + (pacmanYPosition - pacmanLastYPosition) * interp)  + 'px'; //- (pacman.offsetWidth / 2)
+        pacman.style.top = (pacmanLastYPosition + (pacmanYPosition - pacmanLastYPosition) * interp) + (pacman.offsetWidth / 2) + 'px'; //- (pacman.offsetWidth / 2)
+        
         let style = "rotate(" + ((Math.atan2((playerXPosition - pacmanXPosition), (playerYPosition - pacmanYPosition)) * (180 / Math.PI) * -1) + 90)+ "deg)"
-        pacman.style.transform = style;
-        pacman.style.webkitTransform = style;
-        pacman.style.mozTransform = style;
-        pacman.style.msTransform = style;
-        pacman.style.oTransform = style;
+        pacmanDisplay.style.transform = style;
+        pacmanDisplay.style.webkitTransform = style;
+        pacmanDisplay.style.mozTransform = style;
+        pacmanDisplay.style.msTransform = style;
+        pacmanDisplay.style.oTransform = style;
+        
         fpsDisplay.textContent = Math.round(fps) + ' FPS';
     }
 
@@ -73,10 +90,10 @@ $(document).ready(function() {
 
     function end(fps) {
         if (fps < 25) {
-            box.style.backgroundColor = 'black';
+            // box.style.backgroundColor = 'black';
         }
         else if (fps > 30) {
-            box.style.backgroundColor = 'red';
+           //  box.style.backgroundColor = 'red';
         }
     }
 
