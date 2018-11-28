@@ -74,6 +74,10 @@ ul {
 }
 
 /******OPENING QUOTE******/
+
+#titleBox {
+	font-family: 'Blair ITC';
+}
 .openingQuote {
     color: black;
     font-family: 'Times New Roman', Times, serif
@@ -123,7 +127,7 @@ ul {
 }
 
 .typeBox {
-	padding-top:60vh;
+	padding-top:20vh;
 	margin: auto;
 	margin-left: 15%;
 	align-items: flex-start;
@@ -231,6 +235,7 @@ ul {
 	transition: all .4s ease-in-out;
 	/*font-family: 'Blair ITC';*/
 	margin-bottom: 20px;
+	min-height: 330px;
 }
 
 .projectbox:hover, .gameprojectbox:hover {
@@ -369,11 +374,18 @@ ul {
 	background-color: white;
     min-height: 100vh;
 	padding-top: 10vh;
-	/*
-	background-image: url("dar-mondays-17.jpg");
+	
+	background-image: url("flighttest2.jpg");
 	background-repeat: no-repeat;
+	background-size: cover;
 	background-position: center;
-    background-attachment: fixed;*/
+    background-attachment: fixed;
+}
+
+#aeroText {
+	margin: auto;
+	padding: 20px 30px;
+	background-color: rgba(255,255,255,0.85);
 }
 /******* video games ******/
 #videogames {

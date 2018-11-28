@@ -26,23 +26,30 @@
                 <li class="nav-item"><a id="aboutLink" class="nav-link" href="#about">About</a></li>
                 <li class="nav-item"><a id="webprojectLink" class="nav-link" href="#webprojects">Web Projects</a></li>
                 <li class="nav-item"><a id="aerospaceLink" class="nav-link" href="#aerospace">Aerospace Engineering</a></li>
-                <li class="nav-item"><a id="roboticsLink" class="nav-link" href="#robotics">Robotics</a></li>
+                <!--li class="nav-item"><a id="roboticsLink" class="nav-link" href="#robotics">Robotics</a></li-->
                 <li class="nav-item"><a id="videogamesLink" class="nav-link" href="#videogames">Video Games</a></li>
             </ul>
         </div>
     </nav>
     <div id="frontpage" class="imagePanel col-12">
         <div class="typeBox">
-            <h3 class="openingQuote">
-                <span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
-                <span id="quoteAnimation2">You imagine what you desire,</span>
-                <span id="quoteAnimation3">you will what you imagine,</span>
-                <span id="quoteAnimation4">and, at last,</span>
-                <span id="quoteAnimation5">you create what you will."</span> 
-            </h3>
-            <h3 class="openingQuote">
-                <span id="quoteAnimation6">-George Bernard Shaw</span>
-            </h3>
+            <div id="titleBox">
+                <h2>Bryce Egley</h2>
+                <p>bryce.a.egley@gmail.com</p>
+                <a href="https://github.com/Mistweaver">My Github</a>
+            </div>
+            <div style="margin-top: 30vh">
+                <h3 class="openingQuote">
+                    <span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
+                    <span id="quoteAnimation2">You imagine what you desire,</span>
+                    <span id="quoteAnimation3">you will what you imagine,</span>
+                    <span id="quoteAnimation4">and, at last,</span>
+                    <span id="quoteAnimation5">you create what you will."</span> 
+                </h3>
+                <h3 class="openingQuote">
+                    <span id="quoteAnimation6">-George Bernard Shaw</span>
+                </h3>
+            </div>
             </div>
         </div>
     
@@ -51,10 +58,11 @@
             <div class="col-lg-2 col-md-1"></div>
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="row">
-                    <div id="aboutimage" class="col-lg-7 col-md-12">
-                        <img src="morningnews.jpg" class="img-fluid">
+                    <div class="col-lg-1 col-md-0"></div>
+                    <div id="aboutimage" class="col-lg-4 col-md-5">
+                        <img src="myself.png" class="img-fluid" style="max-height: 600px; width: inherit">
                     </div>
-                    <div id="abouttext" class="col-lg-5 col-md-12">
+                    <div id="abouttext" class="col-lg-5 col-md-7">
                         <h4 style="font-family: 'Blair ITC'">
                             My name is Bryce Egley.
                         </h4>
@@ -63,7 +71,7 @@
                             While the rest of my peers set aside such childhood
                             fantasies, I set out to blur the line between my dreams and my reality.
                         </p>
-                        <p>I long aspired to be a professional bum, but I ended up settling in life for studying
+                        <p>My formative years determined I would study
                             aerospace engineering at Purdue University.  During the course
                             of my studies I became a self-taught software and web developer, and now know my way around
                             a terminal.  I am a creator, a writer, an entreprenuer.  When that 
@@ -221,12 +229,11 @@
         </div>
     </div>
     <div id="webprojects" class="section col-12">
-        <div class="row">
+        <!--div class="row">
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
             <div class="projectbox col-lg-8 col-md-10 col-sm-11">
                 <div class="row">
                     <div class="box-left col-lg-6 col-md-12">
-                        <!--p class="date">1/1/3000</p>-->
                         <h2 class="title">MLRStats.com</h2>
                         <p class="description">
                             3rd-party website to track stats and analysis for Major League Rugby.
@@ -242,7 +249,7 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
-        </div>
+        </div-->
         <div class="row">
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
             <div class="projectbox col-lg-8 col-md-10 col-sm-11">
@@ -260,7 +267,7 @@
                         </p>
                     </div>
                     <div class="box-right col-lg-6 col-md-12">
-                        <img src="enginedemo.gif" class="img-fluid">
+                        <img src="angularcrm.gif" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -271,7 +278,27 @@
             <div class="projectbox col-lg-8 col-md-10 col-sm-11">
                 <div class="row">
                     <div class="box-left col-lg-6 col-md-12">
-                        <!--p class="date">1/1/3000</p>-->
+                        <h2 class="title">Fantasy Rugby for MLR</h2>
+                        <p class="description">
+                            Fantasy rugby game for Major League rugby.  Modeled after ESPN fantasy football,
+                            allows users to register leagues and teams to compete against each other.
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> React with Redux, Java REST API, AWS deployment
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="fantasyrugbydemo.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
                         <h2 class="title">Rugby Game Manager</h2>
                         <p class="description">
                             Management application used to track and analyze game statistics
@@ -283,18 +310,17 @@
                         </p>
                     </div>
                     <div class="box-right col-lg-6 col-md-12">
-                        <img src="enginedemo.gif" class="img-fluid">
+                        <img src="rugbymanagerdemo.gif" class="img-fluid">
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
         </div>
-        <div class="row">
+        <!--div class="row">
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
             <div class="projectbox col-lg-8 col-md-10 col-sm-11">
                 <div class="row">
                     <div class="box-left col-lg-6 col-md-12">
-                        <!--p class="date">1/1/3000</p>-->
                         <h2 class="title">Cimacorp News API</h2>
                         <p class="description">
                             Application scrapes Google news results for user queries,
@@ -312,17 +338,14 @@
                 </div>
             </div>
             <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
-        </div>
+        </div>-->
     </div>
     <div id="aerospace" class="col-12">
         <div class="row">
-            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-1 col-md-1"></div>
             <div class="col-lg-8 col-md-10 col-sm-12">
                 <div class="row">
-                    <div id="aboutimage" class="col-lg-7 col-md-12">
-                        <img src="flighttest2.jpg" class="img-fluid">
-                    </div>
-                    <div id="abouttext" class="col-lg-5 col-md-12">
+                    <div id="aerotext" class="col-lg-5 col-md-12">
                         <h4 style="font-family: 'Blair ITC'">
                             "Mama Goose" Senior Design Project - 2015
                         </h4>
@@ -345,12 +368,15 @@
                             <img src="flightvideo.gif" class="img-fluid">
                         </div>
                     </div>
+                    <div id="aboutimage" class="col-lg-7 col-md-12">
+                            <!--img src="flighttest2.jpg" class="img-fluid">-->
+                        </div>
                 </div>
             </div>
-            <div class="col-lg-2  col-md-1"></div>
+            <div class="col-lg-1 col-md-1"></div>
         </div>
     </div>
-    <div id="robotics" class="col-12"></div>
+    <!--div id="robotics" class="col-12"></div-->
     <div id="videogames" class="col-12">
         <div class="row">
             <div class="col-1"></div>
