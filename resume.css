@@ -9,8 +9,13 @@ h6 {
     border-radius: 5px;
     color: white;
     background-color: rgba(0,0,0,0.6);
+    padding-left: 15px;
 }
 #header {
     height: 200px;
     background-color: rgba(0,0,0,.6);
+}
+
+#workhistory li {
+    font-size: 0.9rem;
 }
