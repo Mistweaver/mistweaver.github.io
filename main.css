@@ -48,7 +48,7 @@ html, body {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 1001;
+	z-index: 9;
 	height: 100vh;
 }
 
@@ -437,7 +437,7 @@ ul {
 	top: 0;
 	left: 0;
 	width: 100%;
-	z-index: 9;
+	z-index: 8;
 	height: 100vh;
     animation: cinematicFadeOut 5s linear;
     animation-delay: 2s;
