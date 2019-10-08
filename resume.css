@@ -1,3 +1,27 @@
+@font-face {
+	font-family: "Blair ITC";
+	src: url("fonts/blairITC.otf");
+	src: url("fonts/blairITC.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Rubik";
+	src: url("fonts/Rubik-Regular.ttf");
+	src: url("fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("fonts/Montserrat-Regular.ttf");
+	src: url("fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Petyka";
+	src: url("fonts/Petyka.ttf");
+	src: url("fonts/Petyka.ttf") format("truetype");
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +40,6 @@ h6 {
 }
 #header {
     padding-bottom: 20px;
-    background-color: rgba(0,0,0,.6);
 }
 
 #workhistory li {

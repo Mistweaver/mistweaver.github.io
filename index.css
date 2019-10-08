@@ -14,3 +14,53 @@ h6 {
     height: 200px;
     background-color: rgba(0,0,0,.6);
 }
+
+#galleryWall {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    background-image: url("empty1.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px -80px;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+}
+
+#leftMargin {
+    width: 25%;
+    height:100%;
+    display: flex;
+}
+
+#rightMargin {
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+
+#galleryWindow {
+    background-color: white;
+    width: 50%;
+    height: 550px;
+    margin-top: 10%;
+    position: relative;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+       -moz-box-shadow: 0 10px 6px -6px #777;
+            box-shadow: 0 10px 6px -6px #777;
+}
+
+.customSelect {
+    background-color: transparent;
+}
+
+.customSelect option {
+    margin: 40px;
+  background: rgba(0, 0, 0, 0.3);
+  color: black;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.customOption {
+    background-color: transparent;
+}
