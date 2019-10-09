@@ -1,0 +1,474 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="loader.css">
+    <link rel="stylesheet" type="text/css" href="pacman.css">
+
+    <script src="main.js"></script>
+    <!--script src="pacman.js"></script-->
+
+</head>
+<body>
+    <div id="galleryWall">
+        <div id="leftMargin">
+            <div id="titleBox">
+                <h2>Bryce Egley</h2>
+                <p>bryce.a.egley@gmail.com</p>
+                <a href="resume.html"><p>My Resume</p></a>
+                <a href="https://github.com/Mistweaver"><p>My Github</p></a>
+                <div style="margin-top: 15px">
+                    <p style="margin-bottom: 5px">Gallery Directory</p>
+                    <div style="width: 100%; height: 2px; margin-bottom: 5px; background-color: black">
+                    </div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a id="homeLink" class="nav-link" href="#frontpage">MLR Fantasy Rugby</a></li>
+                        <li class="nav-item"><a id="aboutLink" class="nav-link" href="#about">Mechwarrior 25th Anniversay</a></li>
+                        <li class="nav-item"><a id="webprojectLink" class="nav-link" href="#webprojects">The Open Source Aquatic Library</a></li>
+                        <li class="nav-item"><a id="aerospaceLink" class="nav-link" href="#aerospace">Live Aquarium Feed</a></li>
+                        <li class="nav-item"><a id="videogamesLink" class="nav-link" href="#videogames">DOOM-ba: Roomba plays DOOM</a></li>
+                        <li class="nav-item"><a id="homeLink" class="nav-link" href="#frontpage">Aircraft/Drone Design</a></li>
+                        <li class="nav-item"><a id="aboutLink" class="nav-link" href="#about">Pac-Man!</a></li>
+                        <li class="nav-item"><a id="webprojectLink" class="nav-link" href="#webprojects">About The Artist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="galleryWindow">
+                <div id="fadeBox"></div>
+                <div id="frontpage">
+                    <div class="typeBox">
+                        <h3 class="openingQuote">
+                            <span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
+                            <span id="quoteAnimation2">You imagine what you desire,</span>
+                            <span id="quoteAnimation3">you will what you imagine,</span>
+                            <span id="quoteAnimation4">and, at last,</span>
+                            <span id="quoteAnimation5">you create what you will."</span> 
+                        </h3>
+                        <h3 class="openingQuote">
+                            <span id="quoteAnimation6">-George Bernard Shaw</span>
+                        </h3>
+                    </div>
+                </div>
+                <div id="mainbackground"></div>
+        </div>
+        <div id="rightMargin">
+            <div id="titleBox">
+                
+            </div>
+        </div>
+    </div>
+    <!--
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a id="homeLink" class="nav-link active" href="#frontpage">Home</a></li>
+                <li class="nav-item"><a id="aboutLink" class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a id="webprojectLink" class="nav-link" href="#webprojects">Web Projects</a></li>
+                <li class="nav-item"><a id="aerospaceLink" class="nav-link" href="#aerospace">Aerospace Engineering</a></li>
+                <li class="nav-item"><a id="videogamesLink" class="nav-link" href="#videogames">Video Games</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div id="fadeBox"></div>
+    <div id="frontpage" class="imagePanel col-12">
+        <div class="typeBox">
+            <div id="titleBox">
+                <h2>Bryce Egley</h2>
+                <p>bryce.a.egley@gmail.com</p>
+                <a href="resume.html"><p>My Resume</p></a>
+                <a href="https://github.com/Mistweaver"><p>My Github</p></a>
+            </div>
+            <div style="margin-top: 30vh">
+                <h3 class="openingQuote">
+                    <span id="quoteAnimation1">"Imagination is the beginning of creation. </span>
+                    <span id="quoteAnimation2">You imagine what you desire,</span>
+                    <span id="quoteAnimation3">you will what you imagine,</span>
+                    <span id="quoteAnimation4">and, at last,</span>
+                    <span id="quoteAnimation5">you create what you will."</span> 
+                </h3>
+                <h3 class="openingQuote">
+                    <span id="quoteAnimation6">-George Bernard Shaw</span>
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div id="mainbackground"></div>
+    <div id="about" class="col-12">
+        <div class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="row">
+                    <div class="col-lg-1 col-md-0"></div>
+                    <div id="aboutimage" class="col-lg-4 col-md-5">
+                        <img src="myself.png" class="img-fluid" style="max-height: 600px; width: inherit">
+                    </div>
+                    <div id="abouttext" class="col-lg-5 col-md-7">
+                        <h4 style="font-family: 'Blair ITC'">
+                            My name is Bryce Egley.
+                        </h4>
+                        <p>The greatest tragedy of growing up is learning that dragons do not
+                            exist.  Age robs the world of the magic we viewed through the lens of adolescence.
+                            While the rest of my peers set aside such childhood
+                            fantasies, I set out to blur the line between my dreams and my reality.
+                        </p>
+                        <p>I studied aerospace engineering at Purdue University.  During this time I became a self-taught software engineer/web developer, and now know my way around
+                            a terminal.  I am a creator, a writer, an entreprenuer.
+                        </p>
+                        <p>Somewhere between the digital frontier and the tactile terra we occupy exists a more perfect
+                            union between two worlds.  The advent of artificial intelligence, robotics, the world wide web - all now
+                            accessible by billions of individuals through smartphones - has brought about an age unseen 
+                            in the existence of humanity.  And what lies ahead is beyond our wildest imaginations.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2  col-md-1"></div>
+        </div>
+        <div class="row" style="margin-bottom: 25px">
+            <div class="col-lg-2"></div>
+            <div class="col-8" style="text-align: center">
+                <h4 id="techboxheader">
+                    Relevant Technology Experience/Skills
+                </h4>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div id="techrow" class="row">
+            <div class="col-lg-2 col-md-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="row">
+                    <div id="techbox">
+                        <div class="row">
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-amazonwebservices-original"></i>
+                                <h3>AWS</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-android-plain"></i>
+                                <h3>Android</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-angularjs-plain"></i>
+                                <h3>Angular</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-apache-plain"></i>
+                                <h3>Apache</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-bootstrap-plain"></i>
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-c-plain"></i>
+                                <h3>C</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-docker-plain"></i>
+                                <h3>Docker</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-git-plain"></i>
+                                <h3>Git</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-java-plain"></i>
+                                <h3>Java</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-linux-plain"></i>
+                                <h3>Linux</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <svg class="devicon" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve">
+                                    <path fill="#60be86" d="M667.2,56.5l0-1.4c-0.2,0-0.4,0-0.6,0c-2.5,0-5,0.2-7.4,0.6c-3.9,0.2-7.6,1.3-11.4,3.2c-28.2,11.6-50.4,48.5-77.2,93.2c-39.3,65.5-88.2,147-172.1,167.4c-33.1,8.1-72.2,54.9-109.4,102.3c-3.4,4.3-6.5,8.3-9.3,11.8l-0.9,1.1L10,545.9l218,153.4c91.5-43,119.5,39.3,195.3,245.5C575.8,927.8,678.1,684.1,763.1,668c105.4-19.9,114.2,60.8,226.9,130.4C876.8,553.4,756.6,79.4,667.2,56.5z M338.9,615.7L230,670.9L60.5,551.5L289,457l44.3,33l67.9,51.5C382.3,567.8,361.6,592.8,338.9,615.7z M415.8,520.7l-67.6-50.3L306.7,439c0.5-0.7,1.1-1.4,1.6-2.1c23.9-30.4,68.3-86.9,96-93.6c77.1-18.8,125.8-80.5,163.8-140.3C531.5,295.4,486,416.3,415.8,520.7z"/>
+                                </svg>
+                                <h3 style="margin-top: 0px">Matlab</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-mysql-plain"></i>
+                                <h3>MySQL</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-mongodb-plain"></i>
+                                <h3>MongoDB</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-nodejs-plain"></i>
+                                <h3>NodeJS</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <svg class="devicon" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 600 554.324" enable-background="new 0 0 600 554.324" xml:space="preserve">
+                                    <path id="cv_element" fill="#60be86" d="M228.35,260.638c-66.626-38.467-89.455-123.662-50.988-190.289
+                                        C215.829,3.723,301.023-19.105,367.65,19.362s89.454,123.662,50.987,190.288c-12.226,21.177-29.811,38.762-50.987,50.988
+                                        l-41.941-72.646c26.506-15.303,35.588-49.196,20.284-75.702c-15.303-26.506-49.196-35.587-75.702-20.284
+                                        c-26.506,15.304-35.587,49.196-20.284,75.702c4.864,8.425,11.859,15.421,20.284,20.284L228.35,260.638z"/>
+                                    <g transform="rotate(180,457,415)">
+                                    <path id="cv_element_1_" fill="#60be86" d="M526.65,294.362c66.627,38.467,89.454,123.662,50.987,190.288
+                                        c-38.467,66.627-123.661,89.455-190.288,50.988s-89.455-123.662-50.987-190.289c12.226-21.176,29.811-38.761,50.987-50.987
+                                        l41.941,72.645c-26.506,15.304-35.588,49.196-20.284,75.702c15.303,26.507,49.196,35.588,75.702,20.285
+                                        c26.506-15.304,35.588-49.197,20.284-75.703c-4.863-8.425-11.859-15.42-20.284-20.284L526.65,294.362z"/>
+                                    </g>
+                                    <g transform="rotate(240,142,415)">
+                                    <path id="cv_element_2_" fill="#60be86" d="M281.301,415c0,76.935-62.367,139.301-139.301,139.301S2.699,491.934,2.699,415
+                                        c0-76.934,62.367-139.301,139.301-139.301c24.452,0,48.474,6.437,69.65,18.663l-41.941,72.645
+                                        c-26.506-15.303-60.399-6.222-75.702,20.284s-6.222,60.399,20.284,75.703c26.506,15.303,60.399,6.222,75.702-20.285
+                                        c4.864-8.424,7.425-17.98,7.425-27.709H281.301z"/>
+                                    </g>
+                                </svg>
+                                <h3 style="margin-top: 0px">OpenCV</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-php-plain"></i>
+                                <h3>PHP</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-python-plain"></i>
+                                <h3>Python</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-react-original"></i>
+                                <h3>React</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-typescript-plain"></i>
+                                <h3>Typescript</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-ubuntu-plain"></i>
+                                <h3>Ubuntu</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-webpack-plain"></i>
+                                <h3>Webpack</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-gradle-plain"></i>
+                                <h3>Gradle</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <svg class="devicon devicon-springboot-plain" viewBox="0 0 205.3 184.28">
+                                    <path fill="#60be86" d="M202.66,81.08l-40.43-70C158.72,5,150.1,0,143.08,0H62.22c-7,0-15.64,5-19.15,11.06l-40.43,70c-3.52,6.08-3.52,16,0,22.12l40.43,70c3.51,6.08,12.13,11.06,19.15,11.06h80.86c7,0,15.63-5,19.15-11.06l40.43-70C206.18,97.11,206.18,87.17,202.66,81.08ZM93.91,38.72a8.34,8.34,0,1,1,16.67,0V88.53a8.34,8.34,0,1,1-16.67,0ZM102.25,145A56.51,56.51,0,0,1,68.54,43.17a7.41,7.41,0,1,1,8.85,11.89,41.69,41.69,0,1,0,66.54,33.47A41.89,41.89,0,0,0,127,55,7.41,7.41,0,0,1,135.76,43a56.52,56.52,0,0,1-33.51,102Z"/>
+                                </svg>
+                                <h3 style="margin-top: 0px">Spring Boot</h3>
+                            </div>
+                            <div class="col-xl-1 col-lg-2 col-md-3 col-sm-4 col-xs-4 iconbox">
+                                <i class="devicon devicon-debian-plain"></i>
+                                <h3>Debian</h3>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2  col-md-1"></div>
+        </div>
+    </div>
+    <div id="webprojects" class="section col-12">
+        
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">Angular CRM</h2>
+                        <p class="description">
+                            Customer relationship management system designed to handle insurance leads
+                            on housing sales.  Application is a single-page web application utilizing
+                            OAuth2. Internal company use only.
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> Angular 5.0+, Spring Boot REST API with MongoDB, AWS deployment.
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="angularcrm.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">Fantasy Rugby for MLR</h2>
+                        <p class="description">
+                            Fantasy rugby game for Major League rugby.  Modeled after ESPN fantasy football,
+                            allows users to register leagues and teams to compete against each other.
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> React with Redux, Java REST API, AWS deployment
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="fantasyrugbydemo.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">Rugby Game Manager</h2>
+                        <p class="description">
+                            Management application used to track and analyze game statistics
+                            on the fly.  Users can manage their team, roster, schedule, update scores, add statistics, and publish game recaps.
+
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> React with Redux, Kotlin REST API, AWS deployment
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="rugbymanagerdemo.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        
+    </div>
+    <div id="aerospace" class="col-12">
+        <div class="row">
+            <div class="col-lg-1 col-md-1"></div>
+            <div class="col-lg-8 col-md-10 col-sm-12">
+                <div class="row">
+                    <div id="aerotext" class="col-lg-5 col-md-12">
+                        <h4 style="font-family: 'Blair ITC'">
+                            "Mama Goose" Senior Design Project - 2015
+                        </h4>
+                        <p>Worked in tandem with a team of five other members
+                            to design and build a small aircraft from scratch that
+                            fit in a budget under $500, could be disassembled
+                            into a medium sized plastic bin,
+                            assembled in under ten minutes,
+                            and carry the necessary equipment for the
+                            aforementioned software program. Aircraft
+                            underwent three successful test flights.
+                        </p>
+                        <p>My contribution to the project consisted of
+                            developing models of the aircrafts dynamics
+                            to determine its stability, programming the
+                            controls systems, wing fabrication,
+                            and development of the sense-and-avoid systems for the craft.
+                        </p>
+                        <div class="col-12">
+                            <img src="flightvideo.gif" class="img-fluid">
+                        </div>
+                    </div>
+                    <div id="aboutimage" class="col-lg-7 col-md-12">
+                            
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1"></div>
+        </div>
+    </div>
+   
+    <div id="videogames" class="col-12">
+        <div class="row">
+            <div class="col-1"></div>
+            <div id="arenacontainer" class="col-10">
+                <div id="fpsDisplay"></div>
+                <div id="lifeDisplay"></div>
+                <div id="arena">
+                    <div id="pacman" class="pacman" style="left: 314.667px; top: 108.984px; transform: rotate(221.977deg);">
+                        <div id="pacmanDisplay">
+                            <div class="pacman-top"></div>
+                            <div class="pacman-bottom"></div>
+                        </div>
+                    </div>
+                    <div id="centerDot"></div>
+                    <div id="positionDot"></div>
+                    <div id="arenatitlebox">
+                        <h3>Video Games</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">
+                            Mechwarrior Java (Alpha build)
+                        </h2>
+                        <p class="description">
+                            A reimagining/remastering of the 90's classic.
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> Java, OpenGL, LWJGL 2.0
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="enginedemo.gif" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">
+                            Super Mariota
+                        </h2>
+                        <p class="description">
+                            A simple side-scrolling platform jumper.  Now with extra puns!
+                        </p>
+                        <p id="techstack">
+                            <b>Stack:</b> Android OS, Java
+                        </p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        <img src="supermariotamainscreen.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+            <div class="projectbox col-lg-8 col-md-10 col-sm-11">
+                <div class="row">
+                    <div class="box-left col-lg-6 col-md-12">
+                        <h2 class="title">
+                            Game of Thrones Tetris
+                        </h2>
+                        <p class="description">
+                            Self explanatory: it's Tetris with some Game of Thrones flavor.
+                        </p>
+                        <p id="techstack"><b>Stack:</b> Vanilla Javascript baby!</p>
+                    </div>
+                    <div class="box-right col-lg-6 col-md-12">
+                        
+                        <img src="GoTetris.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-1 col-sm-0.5"></div>
+        </div>
+        -->
+    </div>
+
+</body></html>

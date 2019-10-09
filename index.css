@@ -3,28 +3,28 @@ body {
     padding: 0;
 }
 
-h6 {
-    margin-bottom: 0px;
-    padding: 5px;
-    border-radius: 5px;
-    color: white;
-    background-color: rgba(0,0,0,0.6);
-}
-#header {
-    height: 200px;
-    background-color: rgba(0,0,0,.6);
+#gallery {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 #galleryWall {
-    height: 100%;
-    width: 100%;
     background-color: white;
-    background-image: url("empty1.jpg");
-    background-repeat: no-repeat;
-    background-position: 0px -80px;
-    background-attachment: fixed;
-    background-size: cover;
+    background-image: url("concrete_wall.jpg");
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 70%;
+}
+
+#galleryFloor {
+    background-image: url("bench.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 30%;
 }
 
 #leftMargin {
@@ -33,34 +33,42 @@ h6 {
     display: flex;
 }
 
+#titleBox {
+	font-family: 'Blair ITC';
+	height: 90%;
+    width: 90%;
+    overflow: hidden;
+    margin: auto;
+    font-size: 8pt;
+}
+
 #rightMargin {
     width: 25%;
     height: 100%;
     display: flex;
 }
 
-#galleryWindow {
-    background-color: white;
+#centerDisplay {
     width: 50%;
-    height: 550px;
-    margin-top: 10%;
+    height: 100%;
+    display: flex;
+}
+
+#galleryWindow {
+    padding: 15;
+    margin: auto;
+    background-color: white;
+    height: 90%;
+    width: 90%;
     position: relative;
     -webkit-box-shadow: 0 10px 6px -6px #777;
        -moz-box-shadow: 0 10px 6px -6px #777;
             box-shadow: 0 10px 6px -6px #777;
+    /*width: 50%;
+    height: 550px;
+    margin-top: 10%;
+    position: relative;
+    */
 }
 
-.customSelect {
-    background-color: transparent;
-}
 
-.customSelect option {
-    margin: 40px;
-  background: rgba(0, 0, 0, 0.3);
-  color: black;
-  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
-
-.customOption {
-    background-color: transparent;
-}

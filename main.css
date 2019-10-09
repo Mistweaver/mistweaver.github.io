@@ -46,16 +46,14 @@ html, body {
 	background-position: center;
 	background-attachment: fixed;*/
 	z-index: 9;
-	padding-top: 30%;
+	padding-top: 10%;
 	margin-left: 5%;
 	position: relative;
 }
 
 #mainbackground {
 	background-image: url("whitesandsnm_hdr.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-attachment: fixed;
+	background-size: cover;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -66,12 +64,14 @@ html, body {
 
 .navbar-brand {
 	font-family: 'Blair ITC';
-	color: lightseagreen;
+	color: #454545;
 
 }
 .nav-link {
 	font-family: 'Blair ITC';
-	color: lightseagreen;
+	color: #454545;
+	border-bottom: 2px solid transparent;
+	padding: 0px;
 }
 
 .nav-link:hover {
@@ -84,7 +84,7 @@ html, body {
 
 
 li.nav-item {
-    margin: 5px 12px;
+	border-bottom: 2px solid transparent;
 }
 ul {
 	margin: auto;
@@ -92,10 +92,7 @@ ul {
 
 /******OPENING QUOTE******/
 
-#titleBox {
-	font-family: 'Blair ITC';
-	margin: auto;
-}
+
 .openingQuote {
     color: black;
     font-family: 'Times New Roman', Times, serif
