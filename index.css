@@ -1,74 +1,30 @@
-body {
-    margin: 0;
-    padding: 0;
+html, body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: white;
 }
 
-#gallery {
-    height: 100%;
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
+@font-face {
+	font-family: 'BTClassic';
+	src: url('BTLogo_old.ttf') format('truetype');
 }
 
-#galleryWall {
-    background-color: white;
-    background-image: url("concrete_wall.jpg");
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 70%;
+#overlay {
+    position: fixed; /* Sit on top of the page content */
+    width: 100%; /* Full width (cover the whole page) */
+    height: 100%; /* Full height (cover the whole page) */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
 }
 
-#galleryFloor {
-    background-image: url("bench.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 30%;
+#main {
+    color: white;
 }
 
-#leftMargin {
-    width: 25%;
-    height:100%;
-    display: flex;
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
 }
-
-#titleBox {
-	font-family: 'Blair ITC';
-	height: 90%;
-    width: 90%;
-    overflow: hidden;
-    margin: auto;
-    font-size: 8pt;
-}
-
-#rightMargin {
-    width: 25%;
-    height: 100%;
-    display: flex;
-}
-
-#centerDisplay {
-    width: 50%;
-    height: 100%;
-    display: flex;
-}
-
-#galleryWindow {
-    padding: 15;
-    margin: auto;
-    background-color: white;
-    height: 90%;
-    width: 90%;
-    position: relative;
-    -webkit-box-shadow: 0 10px 6px -6px #777;
-       -moz-box-shadow: 0 10px 6px -6px #777;
-            box-shadow: 0 10px 6px -6px #777;
-    /*width: 50%;
-    height: 550px;
-    margin-top: 10%;
-    position: relative;
-    */
-}
-
-
