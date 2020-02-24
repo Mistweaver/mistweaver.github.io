@@ -49,28 +49,30 @@ window.addEventListener('load', function () {
 
         orbArcLength += orbVelocity * delta;
 
-        degrees = orbArcLength / (2 * Math.PI * circleRadius) * 360
+        // use a rounded version of PI to avoid unnecessarily long calculations
+        degrees = orbArcLength / (2 * 3.14159 * circleRadius) * 360
         // x = r cos(t)    y = r sin(t) 
-        orb1XPos = circleRadius * Math.cos(degrees);
-        orb1YPos = circleRadius * Math.sin(degrees);
+        // round values to avoid long calculations
+        orb1XPos = (circleRadius * Math.cos(degrees)).toFixed(4);
+        orb1YPos = (circleRadius * Math.sin(degrees)).toFixed(4);
 
-        orb2XPos = circleRadius * Math.cos(degrees * 2);
-        orb2YPos = circleRadius * Math.sin(degrees * 2);
+        orb2XPos = (circleRadius * Math.cos(degrees * 2)).toFixed(4);
+        orb2YPos = (circleRadius * Math.sin(degrees * 2)).toFixed(4);
 
-        orb3XPos = circleRadius * Math.cos(degrees * 3);
-        orb3YPos = circleRadius * Math.sin(degrees * 3);
+        orb3XPos = (circleRadius * Math.cos(degrees * 3)).toFixed(4);
+        orb3YPos = (circleRadius * Math.sin(degrees * 3)).toFixed(4);
 
-        orb4XPos = circleRadius * Math.cos(degrees * 4);
-        orb4YPos = circleRadius * Math.sin(degrees * 4);
+        orb4XPos = (circleRadius * Math.cos(degrees * 4)).toFixed(4);
+        orb4YPos = (circleRadius * Math.sin(degrees * 4)).toFixed(4);
 
-        orb5XPos = circleRadius * Math.cos(degrees * 5);
-        orb5YPos = circleRadius * Math.sin(degrees * 5);
+        orb5XPos = (circleRadius * Math.cos(degrees * 5)).toFixed(4);
+        orb5YPos = (circleRadius * Math.sin(degrees * 5)).toFixed(4);
 
-        orb6XPos = circleRadius * Math.cos(degrees * 6);
-        orb6YPos = circleRadius * Math.sin(degrees * 6);
+        orb6XPos = (circleRadius * Math.cos(degrees * 6)).toFixed(4);
+        orb6YPos = (circleRadius * Math.sin(degrees * 6)).toFixed(4);
 
-        orb7XPos = circleRadius * Math.cos(degrees * 7);
-        orb7YPos = circleRadius * Math.sin(degrees * 7);
+        orb7XPos = (circleRadius * Math.cos(degrees * 7)).toFixed(4);
+        orb7YPos = (circleRadius * Math.sin(degrees * 7)).toFixed(4);
     }
 
     function draw(interp) {

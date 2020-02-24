@@ -17,8 +17,8 @@ body, html {
     position: relative;
     /*top: 25px;
     left: 25px;*/
-    height: 200px;
-    width: 200px;
+    height: 1px;
+    width: 1px;
     -webkit-animation: orbit-animation 7s linear infinite;
     animation: orbit-animation 7s linear infinite;
 }

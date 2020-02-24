@@ -39,54 +39,56 @@ window.addEventListener('load', function () {
 
         orbArcLength += orbVelocity * delta;
 
-        degrees = orbArcLength / (2 * Math.PI * circleRadius) * 360
+        // use a rounded version of PI to avoid unnecessarily long calculations
+        degrees = orbArcLength / (2 * 3.14159 * circleRadius) * 360
         // x = r cos(t)    y = r sin(t) 
-        orb1XPos = circleRadius * Math.cos(degrees);
-        orb1YPos = circleRadius * Math.sin(degrees);
+        // round values to avoid long calculations
+        orb1XPos = (circleRadius * Math.cos(degrees)).toFixed(4);
+        orb1YPos = (circleRadius * Math.sin(degrees)).toFixed(4);
 
-        orb2XPos = circleRadius * Math.cos(degrees * 2);
-        orb2YPos = circleRadius * Math.sin(degrees * 2);
+        orb2XPos = (circleRadius * Math.cos(degrees * 2)).toFixed(4);
+        orb2YPos = (circleRadius * Math.sin(degrees * 2)).toFixed(4);
 
-        orb3XPos = circleRadius * Math.cos(degrees * 3);
-        orb3YPos = circleRadius * Math.sin(degrees * 3);
+        orb3XPos = (circleRadius * Math.cos(degrees * 3)).toFixed(4);
+        orb3YPos = (circleRadius * Math.sin(degrees * 3)).toFixed(4);
 
-        orb4XPos = circleRadius * Math.cos(degrees * 4);
-        orb4YPos = circleRadius * Math.sin(degrees * 4);
+        orb4XPos = (circleRadius * Math.cos(degrees * 4)).toFixed(4);
+        orb4YPos = (circleRadius * Math.sin(degrees * 4)).toFixed(4);
 
-        orb5XPos = circleRadius * Math.cos(degrees * 5);
-        orb5YPos = circleRadius * Math.sin(degrees * 5);
+        orb5XPos = (circleRadius * Math.cos(degrees * 5)).toFixed(4);
+        orb5YPos = (circleRadius * Math.sin(degrees * 5)).toFixed(4);
 
-        orb6XPos = circleRadius * Math.cos(degrees * 6);
-        orb6YPos = circleRadius * Math.sin(degrees * 6);
+        orb6XPos = (circleRadius * Math.cos(degrees * 6)).toFixed(4);
+        orb6YPos = (circleRadius * Math.sin(degrees * 6)).toFixed(4);
 
-        orb7XPos = circleRadius * Math.cos(degrees * 7);
-        orb7YPos = circleRadius * Math.sin(degrees * 7);
+        orb7XPos = (circleRadius * Math.cos(degrees * 7)).toFixed(4);
+        orb7YPos = (circleRadius * Math.sin(degrees * 7)).toFixed(4);
 
         
     }
 
     function draw(interp) {
         // console.log("Interp: " + interp);
-        orb1.style.left = orb1XPos + (circleRadius / 2) + 'px';
-        orb1.style.top = orb1YPos + (circleRadius / 2) + 'px';
+        orb1.style.left = (orb1XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb1.style.top = (orb1YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb2.style.left = orb2XPos + (circleRadius / 2) + 'px';
-        orb2.style.top = orb2YPos + (circleRadius / 2) + 'px';
+        orb2.style.left = (orb2XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb2.style.top = (orb2YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb3.style.left = orb3XPos + (circleRadius / 2) + 'px';
-        orb3.style.top = orb3YPos + (circleRadius / 2) + 'px';
+        orb3.style.left = (orb3XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb3.style.top = (orb3YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb4.style.left = orb4XPos + (circleRadius / 2) + 'px';
-        orb4.style.top = orb4YPos + (circleRadius / 2) + 'px';
+        orb4.style.left = (orb4XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb4.style.top = (orb4YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb5.style.left = orb5XPos + (circleRadius / 2) + 'px';
-        orb5.style.top = orb5YPos + (circleRadius / 2) + 'px';
+        orb5.style.left = (orb5XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb5.style.top = (orb5YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb6.style.left = orb6XPos + (circleRadius / 2) + 'px';
-        orb6.style.top = orb6YPos + (circleRadius / 2) + 'px';
+        orb6.style.left = (orb6XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb6.style.top = (orb6YPos + (circleRadius / 2)).toFixed(4) + 'px';
 
-        orb7.style.left = orb7XPos + (circleRadius / 2) + 'px';
-        orb7.style.top = orb7YPos + (circleRadius / 2) + 'px';
+        orb7.style.left = (orb7XPos + (circleRadius / 2)).toFixed(4) + 'px';
+        orb7.style.top = (orb7YPos + (circleRadius / 2)).toFixed(4) + 'px';
     }
 
     function panic() {
