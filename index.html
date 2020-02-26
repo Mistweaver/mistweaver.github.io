@@ -6,6 +6,8 @@
         <link rel="stylesheet" type="text/css" href="index.css" />
 
         <link rel="stylesheet" type="text/css" href="ps2orbs.css">
+        <link rel="stylesheet" type="text/css" href="portfolio.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="modal.css">
         <script src="orbs.js"></script>
     </head>
     <body>
@@ -61,7 +63,6 @@
                     <div class="col-12">
                         <p style="font-size: 15pt;">Who I am</p>
                         <p style="font-size: 11pt;">"He's like a nice, athletic frat guy, but a total nerd." - sister-in-law of an ex-girlfriend.</p>
-                        <p style="font-size: 11pt;">"Wait...you're studying aerospace engineering!?" - incredulous friend on a Monday night at a bar for quarter beers.</p>
                     </div>
                     <div class="col-4 col-sm-12">
                         <p style="font-size: 11pt; margin-top: 0px;">I have always taken great pride in being a multi-faceted individual, whether that means being an athlete studying math and sciences or confusing my college advisors why I would mix biology courses into my engineering curriculum. </p>
@@ -95,145 +96,215 @@
                     </div>
                 </div>
             </div>
-        </div-->
+        </div>
         
-        <!--div style="min-height: 50vh;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <p style="font-size: 13pt; margin-top: 0px;">MLR Fantasy Rugby Application</p>
-                    </div>
-                    <div class="col-5 col-sm-12">
-                    </div>
-                    <div class="col-7 col-sm-12">
-                    </div>
-                </div>
-            </div>
-        </div>
         <div style="min-height: 50vh;">
             <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <p style="font-size: 13pt; margin-top: 0px;">The Open Source Aquatic Library</p>
-                    </div>
-                    <div class="col-5 col-sm-12">
-                    </div>
-                    <div class="col-7 col-sm-12">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="min-height: 50vh;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-sm-12">
-                        <p style="font-size: 13pt; margin-top: 0px;">Mechwarrior 2: 25th Anniversary</p>
-                    </div>
-                    <div class="col-5 col-sm-12">
-                    </div>
-                    <div class="col-7 col-sm-12">
-                        <div class="col-sm-12" style="background-color: black;">
-                            <div style="
-                                padding: 10px; 
-                                text-align: center;
-                                height: 30vh; 
-                                display: flex; 
-                                flex-direction: column;">
-                                <div style="
-                                    background-image: url(flameGif.gif);
-                                    background-size: cover;
-                                    background-position-y: bottom;
-                                    width: 600px;
-                                    height: 75px;
-                                    margin: auto;"
-                                }}>
-                                    <img src="mechwarrior_logo_alpha.png" style="
-                                        width: 600px;
-                                        height: 75px;
-                                        bottom: 0;
-                                        position: relative;"
-                                        
-                                    />
-                                </div>
-                                
-                                <h4 style="color: #c94b02; margin-top: 15px; font-family: 'BTClassic';">25th Anniversary. 31st Century.</h4>
-                            </div>
-                            <div style="margin-top: 25px;">
-                                <img src="28CCO_Unity.png" style="width: 100%;"/>
-                            </div>
-                            <div style="margin-top: 25px;">
-                                <img src="0614192239_HDR.jpg"  style="width: 100%;" />
-                            </div>
+
+                <div id="mlr" class="col-8 col-sm-12 projectContain">
+                    <div class="project">
+                        <div id="project1" class="projectImageContain"></div>
+                        <div class="captionContain">
+                            <p style="font-size: 13pt; font-weight: 600; margin-bottom: 0px;">MLR Fantasy Rugby</p>
+                            <p style="font-size: 11pt; margin: 0px;">The first fantasy sports application built for Major League Rugby</p>
                         </div>
+                    </div>
+                </div>
+
+                <div id="osal" class="col-8 col-sm-12 projectContain">
+                    <div class="project">
+                        <div id="project1" class="projectImageContain"></div>
+                        <div class="captionContain">
+                            <p style="font-size: 13pt; font-weight: 600; margin-bottom: 0px;">The Open Source Aquatic Library</p>
+                            <p style="font-size: 11pt; margin: 0px;">Combining aquaculture and computers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="mw25" class="col-8 col-sm-12 projectContain">
+                    <div class="project">
+                        <div style="text-align: center; padding: 20px; max-width: 100%; background-color: black;">
+                            <div style="
+                                background-image: url(flameGif.gif);
+                                background-size: 300px 200px;
+                                background-position-y: bottom;"
+                            }}>
+                                <img src="mechwarrior_logo_alpha.png" style="
+                                    max-width: 100%;
+                                    bottom: 0;
+                                    position: relative;"
+                                    
+                                />
+                            </div>
+
+                            <p style="color: #c94b02; margin-top: 15px; font-size: 8pt; font-family: 'BTClassic';">25th Anniversary. 31st Century.</p>
                         
+                        </div>
+                            
+                        <div class="captionContain">
+                            <p style="font-size: 13pt; font-weight: 600; margin-bottom: 0px;">Mechwarrior 2: 25th Anniversary</p>
+                            <p style="font-size: 11pt; margin: 0px;">A remake of the 1995 PC classic.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div-->
-        <!--div style="min-height: 50vh;">
+        </div>
+        
+        <div style="min-height: 20vh; margin-top: 30vh;">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-sm-12">
-                        <p style="font-size: 13pt; margin-top: 0px;">The Real Van Wilder</p>
-                    </div>
-                    <div class="col-5 col-sm-12">
-                    </div>
-                    <div class="col-7 col-sm-12">
+                        <p style="font-size: 15pt; margin-top: 0px;">What I've Done</p>
                     </div>
                 </div>
             </div>
         </div-->
-        
+
         <div class="container" style="margin-bottom: 20vh;">
             <div class="row">
-                <p style="font-size: 15pt;">What I've Done</p>
-                <div>
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Alta Cima Corporation</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Full Stack Developer</i> | Chandler, AZ, August 2017 - Present</p>
-                    <p style="margin: 2px 0px;">Built custom CRM that required the company to 5x employee count within a year due to high sales volume.</p>
-                    <p style="margin: 2px 0px;">Created new sales application for the company saving upward of thousands of hours a year and a dozen unnecessary hires.</p style="margin: 2px 0px;">
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">Designed and managed the companies web infrastructure with Amazon Web Services.</p style="margin: 2px 0px;">
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: Java + Spring Boot, Angular 5+, React, Redux, Typescript, MongoDB, MySQL, AWS, PHP 5+</p>
-                </div>
-                <div style="margin-top: 12px;">
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">MLR Fantasy Rugby</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Project Lead</i> | March 2018 - Present</p>
-                    <p style="margin: 2px 0px;">I created the first fantasy sports application for Major League Rugby, a new professional sports league in the United States.</p>
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">First public beta opened to MLR Redditors in April of 2019 and saw nearly 100 active users within the first month.</p>
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: Java + Spring Boot, React + Typescript, MySQL</p>
-                </div>
-                <div style="margin-top: 12px;">
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue University Office of the Dean of Engineering</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Web Developer</i> | West Lafayette, IN, June 2016 - August 2017</h6>
-                    <p style="margin: 2px 0px;">Wrote interactive map application for the university's engineering study abroad program that serves over 24 countries and 500+ students a year.</p>
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">Oversaw site redesign for the Purdue EPICS program, creating an interactive index for hundreds of engineering projects.</p>
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: Zope/Python, MySQL</p>
-                </div>
-                <div style="margin-top: 12px;">
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">CharacterInventory.org Startup</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Web Developer</i> | West Lafayette, IN, May 2016 - August 2016</p>
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">Lead the UI/UX redesign to improve site performance and mobile compatibility, as well as assist with some lingering bugs in their PHP backend.</p>
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, MySQL</p>
+                <div class="col-10">
+                    <p style="font-size: 15pt;">Resume</p>
+                    <div>
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Alta Cima Corporation</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Full Stack Developer</i> | Chandler, AZ, August 2017 - Present</p>
+                        <p style="margin: 2px 0px;">Built custom CRM that required the company to 5x employee count within a year due to high sales volume.</p>
+                        <p style="margin: 2px 0px;">Created new sales application for the company saving upward of thousands of hours a year and a dozen unnecessary hires.</p style="margin: 2px 0px;">
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">Designed and managed the companies web infrastructure with Amazon Web Services.</p style="margin: 2px 0px;">
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: Java + Spring Boot, Angular 5+, React, Redux, Typescript, MongoDB, MySQL, AWS, PHP 5+</p>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">MLR Fantasy Rugby</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Project Lead</i> | March 2018 - Present</p>
+                        <p style="margin: 2px 0px;">I created the first fantasy sports application for Major League Rugby, a new professional sports league in the United States.</p>
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">First public beta opened to MLR Redditors in April of 2019 and saw nearly 100 active users within the first month.</p>
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: Java + Spring Boot, React + Typescript, MySQL</p>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue University Office of the Dean of Engineering</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Web Developer</i> | West Lafayette, IN, June 2016 - August 2017</h6>
+                        <p style="margin: 2px 0px;">Wrote interactive map application for the university's engineering study abroad program that serves over 24 countries and 500+ students a year.</p>
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">Oversaw site redesign for the Purdue EPICS program, creating an interactive index for hundreds of engineering projects.</p>
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: Zope/Python, MySQL</p>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">CharacterInventory.org Startup</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Web Developer</i> | West Lafayette, IN, May 2016 - August 2016</p>
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">Lead the UI/UX redesign to improve site performance and mobile compatibility, as well as assist with some lingering bugs in their PHP backend.</p>
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, MySQL</p>
 
-                </div>
-                <div style="margin-top: 12px;">
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue Libraries IT Department</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Backend Developer</i> | West Lafayette, IN, May 2014 - October 2014</p>
-                    <p style="margin: 2px 0px;">Worked on converting old Adobe ColdFusion applications to a modern PHP/MySQL framework.</p>
-                    <p style="margin: 2px 0px;">Created automated script for processing tens of thousands of files, saving hundreds of man-hours.</p>
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">Implemented a secure voting system for university academic conferences.</p>
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, Adobe ColdFusion, MySQL</p>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue Libraries IT Department</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Backend Developer</i> | West Lafayette, IN, May 2014 - October 2014</p>
+                        <p style="margin: 2px 0px;">Worked on converting old Adobe ColdFusion applications to a modern PHP/MySQL framework.</p>
+                        <p style="margin: 2px 0px;">Created automated script for processing tens of thousands of files, saving hundreds of man-hours.</p>
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">Implemented a secure voting system for university academic conferences.</p>
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, Adobe ColdFusion, MySQL</p>
 
-                </div>
-                <div style="margin-top: 12px;">
-                    <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue University Men’s Rugby</p>
-                    <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Social Media Director</i> | 2014 - 2016</p>
-                    <p style="margin: 2px 0px;">I developed a new team website and media plan that resulted 20%+ gains in online user engagement.</p>
-                    <p style="margin: 2px 0px; margin-bottom: 5px;">Created online form to recruit prospective players.</p>
-                    <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, SQLite</p>
+                    </div>
+                    <div style="margin-top: 12px;">
+                        <p style="font-size: 13pt; font-weight: 600; margin-top: 50px; margin-bottom: 0px;">Purdue University Men’s Rugby</p>
+                        <p style="font-size: 13pt; margin-top: 0px; margin-bottom: 10px;"><i style="color: white;">Social Media Director</i> | 2014 - 2016</p>
+                        <p style="margin: 2px 0px;">I developed a new team website and media plan that resulted 20%+ gains in online user engagement.</p>
+                        <p style="margin: 2px 0px; margin-bottom: 5px;">Created online form to recruit prospective players.</p>
+                        <p style="margin: 2px 0px; font-size: 10pt;">Stack: PHP, SQLite</p>
 
+                    </div>
                 </div>
             </div>
         </div>
+        <div id="mlrModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>
+        <div id="osalModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Modal Header</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Some text in the Modal Body</p>
+                    <p>Some other text...</p>
+                </div>
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+        </div>
+        <div id="mw25Modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h2>Mechwarrior 2: 25th Anniversary</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-5 col-sm-12">
+                            <p>The Mechwarrior 2 series is, to this day, one of my favorite video games ever made.  As </p>
+                            <p>Some other text...</p>
+                        </div>
+                        <div class="col-7 col-sm-12">
+                            <img src="enginedemo.gif" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ 
+        <script>
+            // Get the modal
+            var mlrModal = document.getElementById("mlrModal");
+            var osalModal = document.getElementById("osalModal");
+            var mw25Modal = document.getElementById("mw25Modal");
+
+            // Get the button that opens the modal
+            var mlrToggle = document.getElementById("mlr");
+            var osalToggle = document.getElementById("osal");
+            var mw25Toggle = document.getElementById("mw25");
+
+            // Get the <span> element that closes the modal
+            var span1 = document.getElementsByClassName("close")[0];
+            var span2 = document.getElementsByClassName("close")[1];
+            var span3 = document.getElementsByClassName("close")[2];
+
+            // When the user clicks the button, open the modal 
+            mlrToggle.onclick = function() {  mlrModal.style.display = "block"; }
+            osalToggle.onclick = function() {  osalModal.style.display = "block"; }
+            mw25Toggle.onclick = function() {  mw25Modal.style.display = "block"; }
+
+            // When the user clicks on <span> (x), close the modal
+            span1.onclick = function() { 
+                mlrModal.style.display = "none";
+            }
+
+            span2.onclick = function() { 
+                osalModal.style.display = "none";
+            }
+
+            span3.onclick = function() { 
+                mw25Modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == mlrModal || event.target == osalModal || event.target == mw25Modal) {
+                    mlrModal.style.display = "none";
+                    osalModal.style.display = "none";
+                    mw25Modal.style.display = "none";
+                }
+            }
+        </script>
     </body>
 </html>

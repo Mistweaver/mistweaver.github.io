@@ -1,0 +1,151 @@
+
+#portalOverlay {
+	display: none;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border-color: transparent;
+    color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+}
+
+#bio a:hover {
+	text-decoration: none;
+}
+
+.splash {
+	padding: 15px;
+}
+
+.splash .imageContain {
+	-moz-box-shadow: 10px 10px 5px #888;
+    -webkit-box-shadow: 10px 10px 5px #888;
+    box-shadow: 10px 10px 5px #888;
+}
+
+.imageContain {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 100%;
+}
+
+#splash1 {
+	background-image: url("../images/supermariotascreen2.png");
+}
+#splash2 {
+	background-image: url("../images/aircraftflight.jpg");
+}
+#splash3 {
+	background-image: url("../images/image.png");
+}
+#splash4 {
+	background-image: url("../images/ModalAnalysis5.jpg");
+}
+
+#splashPage {
+	padding: 0px;
+	overflow: hidden;
+	height: 250px;
+}
+
+#main img {
+	height: 100%;
+}
+
+#bannerTitle {
+	height: 150px;
+	background-color: white;
+	text-align: center;
+}
+
+.project {
+	padding: 10px;
+	transition: all .3s ease-in-out;
+}
+
+.projectContain a {
+	color: black;
+}
+
+.projectContain a:hover {
+	text-decoration: none;
+}
+
+
+
+.project:hover {
+	border: 1px solid white;
+}
+
+
+.projectImageContain {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 250px;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+#project1 {
+	background-image: url("aquariumpic.jpg");
+}
+
+
+
+.projectContain {
+	padding: 10px;
+	cursor: pointer;
+}
+
+.captionContain {
+	padding: 5px;
+	border-top: 2px solid red;
+}
+
+
+
+#images {
+	display: none;
+}
+
+.lity-iframe-container {
+	height: 80%;
+}
+
+.lity-container {
+	width: 100%;
+}
+
+#lightboxInfo {
+	margin-bottom: 15px;
+}
+/***************************LIGHTBOX CSS*******************/
+.lightbox {
+	background-color: black;
+	color: white;
+	padding-top: 20px;
+}
+
+.lightboxImage {
+	width: 100%;
+	margin: 5px;
+}
+
+/***************************MEDIA QUERIES************************/
+@media (min-width : 768px) {
+	#images {
+		display: block;
+	}
+}
+
+@media (min-width : 992px) {
+	
+}
+
+@media (min-width : 1200px) {
+}
