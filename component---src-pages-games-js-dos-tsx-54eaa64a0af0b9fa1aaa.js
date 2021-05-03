@@ -1,0 +1,2 @@
+(self.webpackChunkbryce_egley_dot_com=self.webpackChunkbryce_egley_dot_com||[]).push([[386],{1491:function(e,t,c){"use strict";c.r(t);var n=c(7294);t.default=function(){return n.createElement(n.Fragment,null,n.createElement("div",{id:"dosbox"}))}}}]);
+//# sourceMappingURL=component---src-pages-games-js-dos-tsx-54eaa64a0af0b9fa1aaa.js.map
